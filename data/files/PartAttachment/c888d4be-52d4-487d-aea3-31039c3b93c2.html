@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Datasheet &amp; application note database, pdf, circuits, cross reference, data sheet, datasheets | Datasheet Archive</title>
+<meta name="description" content="Datasheet Search Engine - 350 million electronic component datasheets from 8500 manufacturers.">
+<meta name="google-site-verification" content="Cu1zPzUO_sD7Ul4_8MM9uYoiBeqQ6ll7eblQAP2Yui4" />
+<link href="http://www.datasheetarchive.com/css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.datasheetarchive.com/css/ie7.css">
+<![endif]--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/scripts.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/def.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/jquery.featureList-1.0.0.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/bsn.AutoSuggest_c_2.0.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/ajax.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/ajax-dynamic-content.js"></script>
+<script type="text/javascript" src="http://www.datasheetarchive.com/js/css3-mediaqueries.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+  $('#tabs li a').featureList({
+  output : '.slide',
+  start_item : 0
+  });
+ });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function ($) {
+  $.fn.vAlign = function() {
+  return this.each(function(i){
+  var ah = $(this).height();
+  var ph = $(this).parent().height();
+  var mh = Math.ceil((ph-ah) / 2);
+  $(this).css('margin-top', mh);
+  });
+ };
+  $('#tabs li a p').vAlign();
+ });
+</script>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+ $('.results-img').hover(function() {
+ var thumbnail = $(this).next().find("a").attr("rel");
+  $(this).next().find("a").html(' <img src=" ' + thumbnail + ' " alt="loading..."> ')
+  $(this).next().show()
+ }, function() {
+  $(this).next().hide()
+ })
+  $('.details').click(function() {
+   var thumbnail2 = $(this).children().eq(1).find('.details-img').find('a').attr("rel")
+  $('.details-box').hide();
+  $(this).children().find('.details-box').show();
+  $(this).children().eq(1).find('.details-img').find('a').html(' <img src=" ' + thumbnail2 + ' " alt="loading..."> ')
+    })
+     $(".close").click( function (e) {
+   e.stopPropagation();
+  $('.details-box').hide();
+ });
+ var widthSize = $(window).width();
+ $(".details-box").css({ 'width' : widthSize });
+})
+
+// Preload images
+ image1 = new Image();
+ image1.src = "http://www.datasheetarchive.com/images/search-button-on.png";
+ image2 = new Image();
+ image2.src = "http://www.datasheetarchive.com/images/link-hover.jpg";
+ image3 = new Image();
+ image3.src = "http://www.datasheetarchive.com/images/ul_corner_tl.png";
+ image4 = new Image();
+ image4.src = "http://www.datasheetarchive.com/images/ul_corner_tr.png";
+</script>
+
+<script>
+ document.createElement('header');
+ document.createElement('footer');
+</script>
+</head>
+
+<body>
+<header>
+<div id="top">
+ <p id="toptext"><b>NEW DATABASE</b> - 350 MILLION DATASHEETS FROM 8500 MANUFACTURERS</p>
+ <ul class="main">
+  <li><a href="http://www.datasheetarchive.com/datasheet/" title="Search Helper">Search Helper</a></li>
+  <li class="dropmenu">Toolbox
+   <ul class="drop">
+    <li><a href="http://www.datasheetarchive.com/buy/" title="Buy parts ">Buy Parts</a></li>
+    <li><a href="http://www.datasheetarchive.com/samples/18.html" title="Browse Free Samples">Free Samples</a></li>
+    <li><a href="http://www.datasheetarchive.com/datasheet/C-pdf.html" title="Browse our parts database">Browse Parts</a></li>
+    <li><a href="http://www.datasheetarchive.com/manufacturers/" title="Browse manufacturers">Browse Manufacturers</a></li>
+    <li><a href="http://www.datasheetarchive.com/packages/" title="Component Packages &amp; Case Outlines">Packages</a></li>
+    <li><a href="http://www.datasheetarchive.com/photos/148.html" title="Component Photo Archive">Photo Archive</a></li>
+    <li><a href="http://www.datasheetarchive.com/integrated-circuit-logos/" title="Component Manufacturer Logos">Manufacturer Logos</a></li>
+    <li><a href="http://www.datasheetarchive.com/upload/" title="Upload datasheets &amp; application notes">Upload Datasheets</a></li>
+   </ul>
+  </li>
+ <li class="dropmenu language">Language
+  <ul class="drop">
+  <li><a href="http://www.datasheetarchive.com/" title="Datasheet Archive">English</a></li>
+  </ul>
+ </li>
+ </ul>
+</div>
+<div id="search-container">
+ <h1><a href="http://www.datasheetarchive.com/" title="Datasheet Archive"><img src="http://www.datasheetarchive.com/images/logo.png" alt="Datasheet Archive - Datasheet Search Engine" /></a></h1>
+  <div id="button-holder">
+   <a href="http://www.datasheetarchive.com/upload/" class="button-top" id="link1" title="Upload your datasheets">Upload</a> 
+   <a href="http://www.supplyframemedia.com/?ref=datasheetarchive" class="button-top" id="link2" title="Advertising solutions from SupplyFrame Media" target="_blank">Advertise</a>
+   <a href="http://www.datasheetarchive.com/buy/" class="button-top" id="link3" title="Buy Parts ">Buy Parts</a>
+  </div> 
+
+<div id="search">
+ <form name="searchForm" method="post" action="http://www.datasheetarchive.com/">
+  <input type="text" id="searchbox" name="q" autocomplete="off" onkeypress="if(event.keyCode==13) {javascript:form.submit();}" value="">
+  <input type="submit" id="searchbutton" value="">
+<p>Part Number (<a href="http://www.datasheetarchive.com/2n3055%20motorola-datasheet.html">2n3055 motorola</a>), Description (<a href="http://www.datasheetarchive.com/%22USB%20Transceiver%22-datasheet.html">&quot;USB Transceiver&quot;</a>), or Parameters</p>
+   </form>
+  </div>
+ </div>
+</header>
+
+<div id="banner">
+ <div class="container">
+  <div id="feature_list">
+   <ul id="tabs">
+    <li><a><p>Introductions, Promotions, and Offers</p></a></li>
+    <li><a><p>Advertising Solutions</p></a></li>
+    <li><a href="buy/"><p>Findchips - search inventory from leading distributors</p></a></li>
+    <li><a href="samples/"><p>Free Samples</p></a></li>
+   </ul>
+  <div id="output">
+   <div class="slide"><iframe src="http://www.supplyframe.com/partner/DA/search/" align="left" frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no" width="725"></iframe></div>
+    <div class="slide"><a href="http://www.supplyframemedia.com/?ref=datasheetarchive" target="_blank"><img src="images/supplyframe_media.png" style="height: 100%; width: 100%" alt="SupplyFrame Media"></a></div>
+    <div class="slide"><p>&nbsp;</p></div>
+    <div class="slide"><p>&nbsp;</p></div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div id="wide_ad_unit1" class="wide_ads"></div>
+<div class="view">
+ <h2>Recent Datasheet Downloads</h2>
+</div>
+<div id="recent_datasheets" class="xref">
+<table id="recent_datasheet">
+ <tr>
+  <td style="width: 100%;">
+<a class="pdfs" href="DSC%205D-datasheet.html" title="DSC 5D">DSC 5D</a> 
+<a class="pdfs" href="hyperterminal%20apc-datasheet.html" title="hyperterminal apc">hyperterminal apc</a> 
+<a class="pdfs" href="instruction%20set%20of%20pic16f877%20microcontroller-datasheet.html" title="instruction set of pic16f877 microcontroller">instruction set of pic16f877 microcontroller</a> 
+<a class="pdfs" href="vhdl%20source%20code%20for%208085%20microprocessor-datasheet.html" title="vhdl source code for 8085 microprocessor">vhdl source code for 8085 microprocessor</a> 
+<a class="pdfs" href="5%20input%20nand%20gate-datasheet.html" title="5 input nand gate">5 input nand gate</a> 
+<a class="pdfs" href="instruction%20set%20of%20pic16f877%20microcontroller-datasheet.html" title="instruction set of pic16f877 microcontroller">instruction set of pic16f877 microcontroller</a> 
+<a class="pdfs" href="heart%20rate%20monitor%20using%20microcontroller%208051-datasheet.html" title="heart rate monitor using microcontroller 8051">heart rate monitor using microcontroller 8051</a> 
+<a class="pdfs" href="high%20gain%20low%20voltage%20NPN%20transistor-datasheet.html" title="high gain low voltage NPN transistor">high gain low voltage NPN transistor</a> 
+<a class="pdfs" href="M3-0412SE-datasheet.html" title="M3-0412SE">M3-0412SE</a> 
+<a class="pdfs" href="RGB%20LED%2010w-datasheet.html" title="RGB LED 10w">RGB LED 10w</a> 
+<a class="pdfs" href="power%20factor%20PIC%20circuit-datasheet.html" title="power factor PIC circuit">power factor PIC circuit</a> 
+<a class="pdfs" href="CTX12-13855-datasheet.html" title="CTX12-13855">CTX12-13855</a> 
+<a class="pdfs" href="IMSG171P50-datasheet.html" title="IMSG171P50">IMSG171P50</a> 
+<a class="pdfs" href="AX7812-datasheet.html" title="AX7812">AX7812</a> 
+<a class="pdfs" href="power%20factor%20PIC%20circuit-datasheet.html" title="power factor PIC circuit">power factor PIC circuit</a> 
+<a class="pdfs" href="5%20input%20nand%20gate-datasheet.html" title="5 input nand gate">5 input nand gate</a> 
+<a class="pdfs" href="power%20factor%20PIC%20circuit-datasheet.html" title="power factor PIC circuit">power factor PIC circuit</a> 
+<a class="pdfs" href="latch%2074373-datasheet.html" title="latch 74373">latch 74373</a> 
+<a class="pdfs" href="NEC%20DECODER-datasheet.html" title="NEC DECODER">NEC DECODER</a> 
+<a class="pdfs" href="power%20factor%20PIC%20circuit-datasheet.html" title="power factor PIC circuit">power factor PIC circuit</a> 
+<a class="pdfs" href="bluetooth%20v3.0-datasheet.html" title="bluetooth v3.0">bluetooth v3.0</a> 
+<a class="pdfs" href="dram%204164-datasheet.html" title="dram 4164">dram 4164</a> 
+<a class="pdfs" href="bluetooth%20v3.0-datasheet.html" title="bluetooth v3.0">bluetooth v3.0</a> 
+<a class="pdfs" href="MIL-DTL-5624-datasheet.html" title="MIL-DTL-5624">MIL-DTL-5624</a> 
+<a class="pdfs" href="64-Kbyte-datasheet.html" title="64-Kbyte">64-Kbyte</a> 
+<a class="pdfs" href="F852%20transistor-datasheet.html" title="F852 transistor">F852 transistor</a> 
+<a class="pdfs" href="Gennum%20GS1524A-datasheet.html" title="Gennum GS1524A">Gennum GS1524A</a> 
+<a class="pdfs" href="MIL-DTL-5624-datasheet.html" title="MIL-DTL-5624">MIL-DTL-5624</a> 
+<a class="pdfs" href="AT89c2051%20Analog-datasheet.html" title="AT89c2051 Analog">AT89c2051 Analog</a> 
+<a class="pdfs" href="b50K-datasheet.html" title="b50K">b50K</a> 
+<a class="pdfs" href="AQY280-datasheet.html" title="AQY280">AQY280</a> 
+<a class="pdfs" href="8038%20intersil-datasheet.html" title="8038 intersil">8038 intersil</a> 
+<a class="pdfs" href="AQY280-datasheet.html" title="AQY280">AQY280</a> 
+<a class="pdfs" href="diode%201N750-datasheet.html" title="diode 1N750">diode 1N750</a> 
+<a class="pdfs" href="IDTQS3VH16233PAG-datasheet.html" title="IDTQS3VH16233PAG">IDTQS3VH16233PAG</a> 
+<a class="pdfs" href="RF717-datasheet.html" title="RF717">RF717</a> 
+<a class="pdfs" href="latch%2074373-datasheet.html" title="latch 74373">latch 74373</a> 
+<a class="pdfs" href="AT89c2051%20Analog-datasheet.html" title="AT89c2051 Analog">AT89c2051 Analog</a> 
+<a class="pdfs" href="RD6.8EB3-datasheet.html" title="RD6.8EB3">RD6.8EB3</a> 
+<a class="pdfs" href="fault%20finding%20all%20type%20of%20lcd%20tv%20file-datasheet.html" title="fault finding all type of lcd tv file">fault finding all type of lcd tv file</a> 
+<a class="pdfs" href="IM34-14Ex-CDRi-datasheet.html" title="IM34-14Ex-CDRi">IM34-14Ex-CDRi</a> 
+<a class="pdfs" href="AM26LS31N-datasheet.html" title="AM26LS31N">AM26LS31N</a> 
+<a class="pdfs" href="AT89c2051%20Analog-datasheet.html" title="AT89c2051 Analog">AT89c2051 Analog</a> 
+<a class="pdfs" href="MC6862L-datasheet.html" title="MC6862L">MC6862L</a> 
+<a class="pdfs" href="1-776228-2-datasheet.html" title="1-776228-2">1-776228-2</a> 
+<a class="pdfs" href="AD0812HB-A73GL-datasheet.html" title="AD0812HB-A73GL">AD0812HB-A73GL</a> 
+<a class="pdfs" href="421-8MA12-datasheet.html" title="421-8MA12">421-8MA12</a> 
+<a class="pdfs" href="marking%20code%20N3-datasheet.html" title="marking code N3">marking code N3</a> 
+<a class="pdfs" href="AC%20ENERGY%20SAVING%20CIRCUIT%20DIAGRAM%20for%20television-datasheet.html" title="AC ENERGY SAVING CIRCUIT DIAGRAM for television">AC ENERGY SAVING CIRCUIT DIAGRAM for television</a> 
+<a class="pdfs" href="3000w%20inverter-datasheet.html" title="3000w inverter">3000w inverter</a> 
+<a class="pdfs" href="AC%20ENERGY%20SAVING%20CIRCUIT%20DIAGRAM%20for%20television-datasheet.html" title="AC ENERGY SAVING CIRCUIT DIAGRAM for television">AC ENERGY SAVING CIRCUIT DIAGRAM for television</a> 
+<a class="pdfs" href="Stereo%20Graphic%20Equalizer-datasheet.html" title="Stereo Graphic Equalizer">Stereo Graphic Equalizer</a> 
+<a class="pdfs" href="ttl%207421-datasheet.html" title="ttl 7421">ttl 7421</a> 
+<a class="pdfs" href="thyristor%20drive%20dc%20motor%20speed%20control-datasheet.html" title="thyristor drive dc motor speed control">thyristor drive dc motor speed control</a> 
+<a class="pdfs" href="D768-datasheet.html" title="D768">D768</a> 
+<a class="pdfs" href="LC1-D%20contactor-datasheet.html" title="LC1-D contactor">LC1-D contactor</a> 
+<a class="pdfs" href="SKRKAEE-datasheet.html" title="SKRKAEE">SKRKAEE</a> 
+<a class="pdfs" href="hso16-datasheet.html" title="hso16">hso16</a> 
+<a class="pdfs" href="20h-7Fh-datasheet.html" title="20h-7Fh">20h-7Fh</a> 
+<a class="pdfs" href="CLARE%20PRMA1A05-datasheet.html" title="CLARE PRMA1A05">CLARE PRMA1A05</a> 
+<a class="pdfs" href="4073%20cmos-datasheet.html" title="4073 cmos">4073 cmos</a> 
+<a class="pdfs" href="hs01g-datasheet.html" title="hs01g">hs01g</a> 
+<a class="pdfs" href="AQW223-datasheet.html" title="AQW223">AQW223</a> 
+<a class="pdfs" href="Stepping%20Motors%20diagram-datasheet.html" title="Stepping Motors diagram">Stepping Motors diagram</a> 
+<a class="pdfs" href="INOVA%20SEMICONDUCTORS-datasheet.html" title="INOVA SEMICONDUCTORS">INOVA SEMICONDUCTORS</a> 
+<a class="pdfs" href="playstation%202-datasheet.html" title="playstation 2">playstation 2</a> 
+<a class="pdfs" href="5KE400A-datasheet.html" title="5KE400A">5KE400A</a> 
+<a class="pdfs" href="reset%20switch-datasheet.html" title="reset switch">reset switch</a> 
+<a class="pdfs" href="INOVA%20SEMICONDUCTORS-datasheet.html" title="INOVA SEMICONDUCTORS">INOVA SEMICONDUCTORS</a> 
+<a class="pdfs" href="FR22GG69V40-datasheet.html" title="FR22GG69V40">FR22GG69V40</a> 
+<a class="pdfs" href="ultra%20high%20frequency%20FETs%20or%20transistors-datasheet.html" title="ultra high frequency FETs or transistors">ultra high frequency FETs or transistors</a> 
+<a class="pdfs" href="TMS32C54X-datasheet.html" title="TMS32C54X">TMS32C54X</a> 
+<a class="pdfs" href="INOVA%20SEMICONDUCTORS-datasheet.html" title="INOVA SEMICONDUCTORS">INOVA SEMICONDUCTORS</a> 
+<a class="pdfs" href="s-%20band%20Waveguide%20limiter-datasheet.html" title="s- band Waveguide limiter">s- band Waveguide limiter</a> 
+<a class="pdfs" href="TPCA8019-H-datasheet.html" title="TPCA8019-H">TPCA8019-H</a> 
+<a class="pdfs" href="power%2012v%20dc%20220v%20inverters%20schematic-datasheet.html" title="power 12v dc 220v inverters schematic">power 12v dc 220v inverters schematic</a> 
+<a class="pdfs" href="current%20source%20circuit%20diagram-datasheet.html" title="current source circuit diagram">current source circuit diagram</a> 
+<a class="pdfs" href="220%20pF%20condenser-datasheet.html" title="220 pF condenser">220 pF condenser</a> 
+<a class="pdfs" href="schematic%20diagram%20cga%20to%20vga%20converter-datasheet.html" title="schematic diagram cga to vga converter">schematic diagram cga to vga converter</a> 
+<a class="pdfs" href="11%20pin%20relay%20NO%20NC%20ac%2024v-datasheet.html" title="11 pin relay NO NC ac 24v">11 pin relay NO NC ac 24v</a> 
+<a class="pdfs" href="current%20source%20circuit%20diagram-datasheet.html" title="current source circuit diagram">current source circuit diagram</a> 
+<a class="pdfs" href="samsung%20external%20dvd%20writer-datasheet.html" title="samsung external dvd writer">samsung external dvd writer</a> 
+<a class="pdfs" href="LM339N%20IC%20PIN%20DATA-datasheet.html" title="LM339N IC PIN DATA">LM339N IC PIN DATA</a> 
+<a class="pdfs" href="hdmi%20cable-datasheet.html" title="hdmi cable">hdmi cable</a> 
+<a class="pdfs" href="schematic%20diagram%20cga%20to%20vga%20converter-datasheet.html" title="schematic diagram cga to vga converter">schematic diagram cga to vga converter</a> 
+<a class="pdfs" href="SCR%2012V%20battery%20charge%20using%20mobile%20phone-datasheet.html" title="SCR 12V battery charge using mobile phone">SCR 12V battery charge using mobile phone</a> 
+<a class="pdfs" href="circuit%20diagram%20bluetooth%20headset-datasheet.html" title="circuit diagram bluetooth headset">circuit diagram bluetooth headset</a> 
+<a class="pdfs" href="HV%20Floating%20MOS-Gate%20Driver%20circuits-datasheet.html" title="HV Floating MOS-Gate Driver circuits">HV Floating MOS-Gate Driver circuits</a> 
+<a class="pdfs" href="temperature%20of%20heater%20control%20circuitry-datasheet.html" title="temperature of heater control circuitry">temperature of heater control circuitry</a> 
+<a class="pdfs" href="3v3%20regulator%20STMicroelectronics-datasheet.html" title="3v3 regulator STMicroelectronics">3v3 regulator STMicroelectronics</a> 
+<a class="pdfs" href="a25l080m-datasheet.html" title="a25l080m">a25l080m</a> 
+<a class="pdfs" href="3.5mm%20to%20usb-datasheet.html" title="3.5mm to usb">3.5mm to usb</a> 
+<a class="pdfs" href="323-1BL000AA0-datasheet.html" title="323-1BL000AA0">323-1BL000AA0</a> 
+<a class="pdfs" href="L2F50-datasheet.html" title="L2F50">L2F50</a> 
+<a class="pdfs" href="hdmi%20cable-datasheet.html" title="hdmi cable">hdmi cable</a> 
+<a class="pdfs" href="74AS138-datasheet.html" title="74AS138">74AS138</a> 
+<a class="pdfs" href="470%20uf%20400WV-datasheet.html" title="470 uf 400WV">470 uf 400WV</a> 
+<a class="pdfs" href="PCG-V505-datasheet.html" title="PCG-V505">PCG-V505</a> 
+<a class="pdfs" href="LS2037-datasheet.html" title="LS2037">LS2037</a> 
+<a class="pdfs" href="7421%20ttl%20AND%20gate-datasheet.html" title="7421 ttl AND gate">7421 ttl AND gate</a> 
+<a class="pdfs" href="7421%20AND%20gate-datasheet.html" title="7421 AND gate">7421 AND gate</a> 
+<a class="pdfs" href="jack%20J10-datasheet.html" title="jack J10">jack J10</a> 
+<a class="pdfs" href="GB0535ADV1-8-datasheet.html" title="GB0535ADV1-8">GB0535ADV1-8</a> 
+<a class="pdfs" href="7421%20AND%20gate-datasheet.html" title="7421 AND gate">7421 AND gate</a> 
+<a class="pdfs" href="J10-GND-datasheet.html" title="J10-GND">J10-GND</a> 
+<a class="pdfs" href="zG%20j1-datasheet.html" title="zG j1">zG j1</a> 
+<a class="pdfs" href="SOLI%20ELECTRONICS%20INDUSTRY-datasheet.html" title="SOLI ELECTRONICS INDUSTRY">SOLI ELECTRONICS INDUSTRY</a> 
+<a class="pdfs" href="nvidia%20mcp-datasheet.html" title="nvidia mcp">nvidia mcp</a> 
+<a class="pdfs" href="AM3%20Processor%20Functional-datasheet.html" title="AM3 Processor Functional">AM3 Processor Functional</a> 
+<a class="pdfs" href="AW3211-datasheet.html" title="AW3211">AW3211</a> 
+<a class="pdfs" href="dual%20audio%20amplifier%20circuit%20diagram-datasheet.html" title="dual audio amplifier circuit diagram">dual audio amplifier circuit diagram</a> 
+<a class="pdfs" href="marking%20codes%20ON-datasheet.html" title="marking codes ON">marking codes ON</a> 
+<a class="pdfs" href="PN%202222A-datasheet.html" title="PN 2222A">PN 2222A</a> 
+<a class="pdfs" href="mp4204-datasheet.html" title="mp4204">mp4204</a> 
+<a class="pdfs" href="SiI%201162-datasheet.html" title="SiI 1162">SiI 1162</a> 
+<a class="pdfs" href="ms-70156-250-datasheet.html" title="ms-70156-250">ms-70156-250</a> 
+<a class="pdfs" href="0x0f50-datasheet.html" title="0x0f50">0x0f50</a> 
+<a class="pdfs" href="B20100%20AKA-datasheet.html" title="B20100 AKA">B20100 AKA</a> 
+<a class="pdfs" href="SiI%20170b-datasheet.html" title="SiI 170b">SiI 170b</a> 
+<a class="pdfs" href="smu26b-datasheet.html" title="smu26b">smu26b</a> 
+<a class="pdfs" href="PM20CSJ060%20application%20note-datasheet.html" title="PM20CSJ060 application note">PM20CSJ060 application note</a> 
+<a class="pdfs" href="98DX2122-xx-datasheet.html" title="98DX2122-xx">98DX2122-xx</a> 
+<a class="pdfs" href="s1308%20diode-datasheet.html" title="s1308 diode">s1308 diode</a> 
+<a class="pdfs" href="7421%20AND%20gate-datasheet.html" title="7421 AND gate">7421 AND gate</a> 
+<a class="pdfs" href="MOTOR%20DRIVER%20L293D-datasheet.html" title="MOTOR DRIVER L293D">MOTOR DRIVER L293D</a> 
+<a class="pdfs" href="PID%20control-datasheet.html" title="PID control">PID control</a> 
+<a class="pdfs" href="vco%20gsm%20band-datasheet.html" title="vco gsm band">vco gsm band</a> 
+<a class="pdfs" href="8251%20usart-datasheet.html" title="8251 usart">8251 usart</a> 
+<a class="pdfs" href="sandisk%20tf-datasheet.html" title="sandisk tf">sandisk tf</a> 
+<a class="pdfs" href="S29GL512P-datasheet.html" title="S29GL512P">S29GL512P</a> 
+<a class="pdfs" href="7421%20AND%20gate-datasheet.html" title="7421 AND gate">7421 AND gate</a> 
+<a class="pdfs" href="crt%20monitor%20spc%2017%22%20schematic-datasheet.html" title="crt monitor spc 17&quot; schematic">crt monitor spc 17&quot; schematic</a> 
+<a class="pdfs" href="4073%20cmos%20AND%20gate-datasheet.html" title="4073 cmos AND gate">4073 cmos AND gate</a> 
+<a class="pdfs" href="M5M5256-10L-datasheet.html" title="M5M5256-10L">M5M5256-10L</a> 
+<a class="pdfs" href="7421%20AND%20gate-datasheet.html" title="7421 AND gate">7421 AND gate</a> 
+<a class="pdfs" href="AT%20command%20set-datasheet.html" title="AT command set">AT command set</a> 
+<a class="pdfs" href="subwoofer%20diagram%20using%20dual%20op%20amp-datasheet.html" title="subwoofer diagram using dual op amp">subwoofer diagram using dual op amp</a> 
+<a class="pdfs" href="LM%20317%20IC-datasheet.html" title="LM 317 IC">LM 317 IC</a> 
+<a class="pdfs" href="2N7000%20Fet-datasheet.html" title="2N7000 Fet">2N7000 Fet</a> 
+<a class="pdfs" href="OQ8844T-datasheet.html" title="OQ8844T">OQ8844T</a> 
+<a class="pdfs" href="subwoofer%20diagram%20using%20dual%20op%20amp-datasheet.html" title="subwoofer diagram using dual op amp">subwoofer diagram using dual op amp</a> 
+<a class="pdfs" href="pic%20tachometer%20circuit-datasheet.html" title="pic tachometer circuit">pic tachometer circuit</a> 
+<a class="pdfs" href="motorola%20ups%20schematic-datasheet.html" title="motorola ups schematic">motorola ups schematic</a> 
+<a class="pdfs" href="20%20channel%20GRAPHIC%20EQUALIZER-datasheet.html" title="20 channel GRAPHIC EQUALIZER">20 channel GRAPHIC EQUALIZER</a> 
+<a class="pdfs" href="a1011-datasheet.html" title="a1011">a1011</a> 
+<a class="pdfs" href="Bellcore-468-datasheet.html" title="Bellcore-468">Bellcore-468</a> 
+<a class="pdfs" href="mc3406-datasheet.html" title="mc3406">mc3406</a> 
+<a class="pdfs" href="MDLS16168D-datasheet.html" title="MDLS16168D">MDLS16168D</a> 
+<a class="pdfs" href="m30622%20protect-datasheet.html" title="m30622 protect">m30622 protect</a> 
+<a class="pdfs" href="temperature%20of%20heater%20control%20circuitry-datasheet.html" title="temperature of heater control circuitry">temperature of heater control circuitry</a> 
+<a class="pdfs" href="PGMR20-datasheet.html" title="PGMR20">PGMR20</a> 
+<a class="pdfs" href="temperature%20of%20heater%20control%20circuitry-datasheet.html" title="temperature of heater control circuitry">temperature of heater control circuitry</a> 
+<a class="pdfs" href="L298%20H-bridge%20motor%20drive-datasheet.html" title="L298 H-bridge motor drive">L298 H-bridge motor drive</a> 
+<a class="pdfs" href="rjp30e2dpk-datasheet.html" title="rjp30e2dpk">rjp30e2dpk</a> 
+<a class="pdfs" href="led%20lamp%205mm-datasheet.html" title="led lamp 5mm">led lamp 5mm</a> 
+<a class="pdfs" href="4004%20microprocessor-datasheet.html" title="4004 microprocessor">4004 microprocessor</a> 
+<a class="pdfs" href="28BYJ-48-datasheet.html" title="28BYJ-48">28BYJ-48</a> 
+<a class="pdfs" href="4004%20microprocessor-datasheet.html" title="4004 microprocessor">4004 microprocessor</a> 
+<a class="pdfs" href="smd%20h3%20zener%20to-datasheet.html" title="smd h3 zener to">smd h3 zener to</a> 
+<a class="pdfs" href="qualcomm%20chipsets%20%22at%20command%22-datasheet.html" title="qualcomm chipsets &quot;at command&quot;">qualcomm chipsets &quot;at command&quot;</a> 
+<a class="pdfs" href="4004%20microprocessor-datasheet.html" title="4004 microprocessor">4004 microprocessor</a> 
+<a class="pdfs" href="ic%205304%20smd-datasheet.html" title="ic 5304 smd">ic 5304 smd</a> 
+<a class="pdfs" href="xxxx%20sex-datasheet.html" title="xxxx sex">xxxx sex</a> 
+<a class="pdfs" href="qualcomm%20usb%20modem-datasheet.html" title="qualcomm usb modem">qualcomm usb modem</a> 
+<a class="pdfs" href="ic%205304-datasheet.html" title="ic 5304">ic 5304</a> 
+<a class="pdfs" href="qualcomm%20usb%20modem-datasheet.html" title="qualcomm usb modem">qualcomm usb modem</a> 
+<a class="pdfs" href="crystal%206%20Mhz-datasheet.html" title="crystal 6 Mhz">crystal 6 Mhz</a> 
+<a class="pdfs" href="qualcomm%20usb%20modem-datasheet.html" title="qualcomm usb modem">qualcomm usb modem</a> 
+<a class="pdfs" href="digital%20control%20of%203%20phase%20inverter%20schematic%20diagram%20with%20phase%20feedback-datasheet.html" title="digital control of 3 phase inverter schematic diagram with phase feedback">digital control of 3 phase inverter schematic diagram with phase feedback</a> 
+<a class="pdfs" href="NCP3337-datasheet.html" title="NCP3337">NCP3337</a> 
+<a class="pdfs" href="qualcomm%20usb%20modem-datasheet.html" title="qualcomm usb modem">qualcomm usb modem</a> 
+<a class="pdfs" href="smc%20dy7p-datasheet.html" title="smc dy7p">smc dy7p</a> 
+<a class="pdfs" href="LM2576-ADJ-datasheet.html" title="LM2576-ADJ">LM2576-ADJ</a> 
+<a class="pdfs" href="XUX0AKSAT16-datasheet.html" title="XUX0AKSAT16">XUX0AKSAT16</a> 
+<a class="pdfs" href="pc%20power%20supply%20diagram-datasheet.html" title="pc power supply diagram">pc power supply diagram</a> 
+<a class="pdfs" href="TYN616-datasheet.html" title="TYN616">TYN616</a> 
+<a class="pdfs" href="smc%20dy7p-datasheet.html" title="smc dy7p">smc dy7p</a> 
+<a class="pdfs" href="Three-Five%20Systems-datasheet.html" title="Three-Five Systems">Three-Five Systems</a> 
+<a class="pdfs" href="m6%20sot-23%20pinout-datasheet.html" title="m6 sot-23 pinout">m6 sot-23 pinout</a> 
+<a class="pdfs" href="TMM-103-02-L-D-datasheet.html" title="TMM-103-02-L-D">TMM-103-02-L-D</a> 
+<a class="pdfs" href="Three-Five%20Systems-datasheet.html" title="Three-Five Systems">Three-Five Systems</a> 
+<a class="pdfs" href="application%20mc34063-datasheet.html" title="application mc34063">application mc34063</a> 
+<a class="pdfs" href="NL10276AC28-datasheet.html" title="NL10276AC28">NL10276AC28</a> 
+<a class="pdfs" href="Three-Five%20Systems-datasheet.html" title="Three-Five Systems">Three-Five Systems</a> 
+<a class="pdfs" href="%22Cermet%20Trimmers%22-datasheet.html" title="&quot;Cermet Trimmers&quot;">&quot;Cermet Trimmers&quot;</a> 
+<a class="pdfs" href="Cmos%2074%20HC-datasheet.html" title="Cmos 74 HC">Cmos 74 HC</a> 
+<a class="pdfs" href="49mhz%20remote%20control%20receiver%20circuit-datasheet.html" title="49mhz remote control receiver circuit">49mhz remote control receiver circuit</a> 
+<a class="pdfs" href="schematic%20design%20for%20surge%20protector%20and%20electric-datasheet.html" title="schematic design for surge protector and electric">schematic design for surge protector and electric</a> 
+<a class="pdfs" href="AES1711-datasheet.html" title="AES1711">AES1711</a> 
+<a class="pdfs" href="%22Cermet%20Trimmers%22-datasheet.html" title="&quot;Cermet Trimmers&quot;">&quot;Cermet Trimmers&quot;</a> 
+<a class="pdfs" href="VQ52-datasheet.html" title="VQ52">VQ52</a> 
+<a class="pdfs" href="schematic%20diagram%20ac-dc%20inverter-datasheet.html" title="schematic diagram ac-dc inverter">schematic diagram ac-dc inverter</a> 
+<a class="pdfs" href="rosemount%20calibration-datasheet.html" title="rosemount calibration">rosemount calibration</a> 
+<a class="pdfs" href="ZILOG%20Z180-datasheet.html" title="ZILOG Z180">ZILOG Z180</a> 
+<a class="pdfs" href="EEPROM-datasheet.html" title="EEPROM">EEPROM</a> 
+<a class="pdfs" href="93.01.0.024-datasheet.html" title="93.01.0.024">93.01.0.024</a> 
+<a class="pdfs" href="TC9469BF-datasheet.html" title="TC9469BF">TC9469BF</a> 
+<a class="pdfs" href="AVANTEK%20transistor-datasheet.html" title="AVANTEK transistor">AVANTEK transistor</a> 
+<a class="pdfs" href="1757-PLX52-datasheet.html" title="1757-PLX52">1757-PLX52</a> 
+<a class="pdfs" href="NEC%20D2732D-datasheet.html" title="NEC D2732D">NEC D2732D</a> 
+<a class="pdfs" href="LM7805K-8QR-B-datasheet.html" title="LM7805K-8QR-B">LM7805K-8QR-B</a> 
+<a class="pdfs" href="SMD%20MARKING%20CODE%20101-datasheet.html" title="SMD MARKING CODE 101">SMD MARKING CODE 101</a> 
+<a class="pdfs" href="DC%20Power%20Connectors-datasheet.html" title="DC Power Connectors">DC Power Connectors</a> 
+<a class="pdfs" href="zinc-oxide%20nonlinear%20resistors-datasheet.html" title="zinc-oxide nonlinear resistors">zinc-oxide nonlinear resistors</a> 
+<a class="pdfs" href="c0339-datasheet.html" title="c0339">c0339</a> 
+<a class="pdfs" href="A165K-T3MR-2-datasheet.html" title="A165K-T3MR-2">A165K-T3MR-2</a> 
+<a class="pdfs" href="samsung-datasheet.html" title="samsung">samsung</a> 
+<a class="pdfs" href="thermal%20design%20guide%20-intel-datasheet.html" title="thermal design guide -intel">thermal design guide -intel</a> 
+<a class="pdfs" href="6811%20brushless-datasheet.html" title="6811 brushless">6811 brushless</a> 
+<a class="pdfs" href="75332G-datasheet.html" title="75332G">75332G</a> 
+<a class="pdfs" href="7462-M-datasheet.html" title="7462-M">7462-M</a> 
+<a class="pdfs" href="75043-datasheet.html" title="75043">75043</a> 
+<a class="pdfs" href="LR50-datasheet.html" title="LR50">LR50</a> 
+<a class="pdfs" href="TEMT6200FX01A-datasheet.html" title="TEMT6200FX01A">TEMT6200FX01A</a> 
+<a class="pdfs" href="motorola%20ups%20schematic-datasheet.html" title="motorola ups schematic">motorola ups schematic</a> 
+<a class="pdfs" href="stepdown%20transformer-datasheet.html" title="stepdown transformer">stepdown transformer</a> 
+<a class="pdfs" href="motorola%20ups%20schematic-datasheet.html" title="motorola ups schematic">motorola ups schematic</a> 
+<a class="pdfs" href="ntc%2016d15-datasheet.html" title="ntc 16d15">ntc 16d15</a> 
+<a class="pdfs" href="RK431-datasheet.html" title="RK431">RK431</a> 
+<a class="pdfs" href="6%20pin%203.5mm%20stereo%20microphone%20jack-datasheet.html" title="6 pin 3.5mm stereo microphone jack">6 pin 3.5mm stereo microphone jack</a> 
+<a class="pdfs" href="KT508-300-datasheet.html" title="KT508-300">KT508-300</a> 
+<a class="pdfs" href="9014%20SMD-datasheet.html" title="9014 SMD">9014 SMD</a> 
+<a class="pdfs" href="AVANTEK%20transistor-datasheet.html" title="AVANTEK transistor">AVANTEK transistor</a> 
+<a class="pdfs" href="Three-Five%20Systems-datasheet.html" title="Three-Five Systems">Three-Five Systems</a> 
+<a class="pdfs" href="1747-RM001-datasheet.html" title="1747-RM001">1747-RM001</a> 
+<a class="pdfs" href="CD74HC160-datasheet.html" title="CD74HC160">CD74HC160</a> 
+<a class="pdfs" href="300kVA-datasheet.html" title="300kVA">300kVA</a> 
+<a class="pdfs" href="AVANTEK%20transistor-datasheet.html" title="AVANTEK transistor">AVANTEK transistor</a> 
+<a class="pdfs" href="types%20ceramic%20capacitor-datasheet.html" title="types ceramic capacitor">types ceramic capacitor</a> 
+<a class="pdfs" href="6%20pin%20headphone%20PCB%20Mounted%203.5mm%20Stereo%20jack-datasheet.html" title="6 pin headphone PCB Mounted 3.5mm Stereo jack">6 pin headphone PCB Mounted 3.5mm Stereo jack</a> 
+<a class="pdfs" href="AVANTEK%20transistor-datasheet.html" title="AVANTEK transistor">AVANTEK transistor</a> 
+<a class="pdfs" href="types%20ceramic%20capacitor-datasheet.html" title="types ceramic capacitor">types ceramic capacitor</a> 
+<a class="pdfs" href="the%20complete%20design%20requires%20just%20five-datasheet.html" title="the complete design requires just five">the complete design requires just five</a> 
+  </td>
+ </tr>
+</table>
+</div>
+<div class="view">
+ <h2>Popular Datasheet Downloads</h2>
+</div>
+<div id="top_datasheets" class="xref">
+<table id="top_datasheet">
+ <tr>
+  <td style="width: 100%;">
+<a class="pdfs" href="nec%202501-datasheet.html" title="nec 2501">nec 2501</a> 
+<a class="pdfs" href="PC%20MOTHERBOARD%20CIRCUIT%20diagram-datasheet.html" title="PC MOTHERBOARD CIRCUIT diagram">PC MOTHERBOARD CIRCUIT diagram</a> 
+<a class="pdfs" href="AN5522-datasheet.html" title="AN5522">AN5522</a> 
+<a class="pdfs" href="RE200B-datasheet.html" title="RE200B">RE200B</a> 
+<a class="pdfs" href="1000w%20inverter%20PURE%20SINE%20WAVE%20schematic%20diagram-datasheet.html" title="1000w inverter PURE SINE WAVE schematic diagram">1000w inverter PURE SINE WAVE schematic diagram</a> 
+<a class="pdfs" href="yx%20801-datasheet.html" title="yx 801">yx 801</a> 
+<a class="pdfs" href="LA%2078141-datasheet.html" title="LA 78141">LA 78141</a> 
+<a class="pdfs" href="cosmo%201010%20817-datasheet.html" title="cosmo 1010 817">cosmo 1010 817</a> 
+<a class="pdfs" href="star%20delta%20wiring%20diagram%20motor%20start%20y-datasheet.html" title="star delta wiring diagram motor start y">star delta wiring diagram motor start y</a> 
+<a class="pdfs" href="US18650GR-datasheet.html" title="US18650GR">US18650GR</a> 
+<a class="pdfs" href="schematic%20diagram%20vga%20to%20rca-datasheet.html" title="schematic diagram vga to rca">schematic diagram vga to rca</a> 
+<a class="pdfs" href="JHD162A-datasheet.html" title="JHD162A">JHD162A</a> 
+<a class="pdfs" href="MCZ3001D-datasheet.html" title="MCZ3001D">MCZ3001D</a> 
+<a class="pdfs" href="eh16a-datasheet.html" title="eh16a">eh16a</a> 
+<a class="pdfs" href="IN4007-datasheet.html" title="IN4007">IN4007</a> 
+<a class="pdfs" href="C3205%20transistor-datasheet.html" title="C3205 transistor">C3205 transistor</a> 
+<a class="pdfs" href="cosmo%201010%20817-datasheet.html" title="cosmo 1010 817">cosmo 1010 817</a> 
+<a class="pdfs" href="CD2003GP-datasheet.html" title="CD2003GP">CD2003GP</a> 
+<a class="pdfs" href="74HC%2FHCT%2FHCU%2FHCMOS%20Logic%20Family%20Specifications-datasheet.html" title="74HC/HCT/HCU/HCMOS Logic Family Specifications">74HC/HCT/HCU/HCMOS Logic Family Specifications</a> 
+<a class="pdfs" href="nec2501-datasheet.html" title="nec2501">nec2501</a> 
+<a class="pdfs" href="STK403-130-datasheet.html" title="STK403-130">STK403-130</a> 
+<a class="pdfs" href="TTC%20103%20thermistor-datasheet.html" title="TTC 103 thermistor">TTC 103 thermistor</a> 
+<a class="pdfs" href="H20R1202-datasheet.html" title="H20R1202">H20R1202</a> 
+<a class="pdfs" href="siemens%20Logo%20230RC%20manual-datasheet.html" title="siemens Logo 230RC manual">siemens Logo 230RC manual</a> 
+<a class="pdfs" href="C33740%20NPN%20transistor%20datasheet-datasheet.html" title="C33740 NPN transistor datasheet">C33740 NPN transistor datasheet</a> 
+<a class="pdfs" href="mip2f2-datasheet.html" title="mip2f2">mip2f2</a> 
+<a class="pdfs" href="Maxim%20MAX8774-datasheet.html" title="Maxim MAX8774">Maxim MAX8774</a> 
+<a class="pdfs" href="TCA700Y-datasheet.html" title="TCA700Y">TCA700Y</a> 
+<a class="pdfs" href="2SC5936-datasheet.html" title="2SC5936">2SC5936</a> 
+<a class="pdfs" href="Qualcomm%20MSM6290-datasheet.html" title="Qualcomm MSM6290">Qualcomm MSM6290</a> 
+<a class="pdfs" href="optocoupler%20817b-datasheet.html" title="optocoupler 817b">optocoupler 817b</a> 
+<a class="pdfs" href="C2655%20NPN%20Transistor-datasheet.html" title="C2655 NPN Transistor">C2655 NPN Transistor</a> 
+<a class="pdfs" href="RAS%200510%20SUN%20HOLD-datasheet.html" title="RAS 0510 SUN HOLD">RAS 0510 SUN HOLD</a> 
+<a class="pdfs" href="BC417%2A%20CSR-datasheet.html" title="BC417* CSR">BC417* CSR</a> 
+<a class="pdfs" href="RT8206B-datasheet.html" title="RT8206B">RT8206B</a> 
+<a class="pdfs" href="C2655%20NPN%20Transistor-datasheet.html" title="C2655 NPN Transistor">C2655 NPN Transistor</a> 
+<a class="pdfs" href="IF-E91A-datasheet.html" title="IF-E91A">IF-E91A</a> 
+<a class="pdfs" href="MP1583DN-datasheet.html" title="MP1583DN">MP1583DN</a> 
+<a class="pdfs" href="817B%20OPTOCOUPLER%204-PIN-datasheet.html" title="817B OPTOCOUPLER 4-PIN">817B OPTOCOUPLER 4-PIN</a> 
+<a class="pdfs" href="CD%205888%20CB-datasheet.html" title="CD 5888 CB">CD 5888 CB</a> 
+<a class="pdfs" href="sd4841p-datasheet.html" title="sd4841p">sd4841p</a> 
+<a class="pdfs" href="transistor%20d1047-datasheet.html" title="transistor d1047">transistor d1047</a> 
+<a class="pdfs" href="TT%202206%20datasheet-datasheet.html" title="TT 2206 datasheet">TT 2206 datasheet</a> 
+<a class="pdfs" href="TCA700Y-datasheet.html" title="TCA700Y">TCA700Y</a> 
+<a class="pdfs" href="STRW6252-datasheet.html" title="STRW6252">STRW6252</a> 
+<a class="pdfs" href="stk442-130-datasheet.html" title="stk442-130">stk442-130</a> 
+<a class="pdfs" href="TTC%20103%20thermistor-datasheet.html" title="TTC 103 thermistor">TTC 103 thermistor</a> 
+<a class="pdfs" href="c547b-datasheet.html" title="c547b">c547b</a> 
+<a class="pdfs" href="sine%20wave%20generator%20using%20ic%20555-datasheet.html" title="sine wave generator using ic 555">sine wave generator using ic 555</a> 
+<a class="pdfs" href="ar7240-datasheet.html" title="ar7240">ar7240</a> 
+<a class="pdfs" href="WS%2078L05-datasheet.html" title="WS 78L05">WS 78L05</a> 
+<a class="pdfs" href="NEC%202561-datasheet.html" title="NEC 2561">NEC 2561</a> 
+<a class="pdfs" href="eh11a-datasheet.html" title="eh11a">eh11a</a> 
+<a class="pdfs" href="13001%20TRANSISTOR-datasheet.html" title="13001 TRANSISTOR">13001 TRANSISTOR</a> 
+<a class="pdfs" href="220v%20AC%20voltage%20stabilizer%20schematic%20diagram-datasheet.html" title="220v AC voltage stabilizer schematic diagram">220v AC voltage stabilizer schematic diagram</a> 
+<a class="pdfs" href="max8774-datasheet.html" title="max8774">max8774</a> 
+<a class="pdfs" href="THERMISTORS%20SCK%20055-datasheet.html" title="THERMISTORS SCK 055">THERMISTORS SCK 055</a> 
+<a class="pdfs" href="TT%202206-datasheet.html" title="TT 2206">TT 2206</a> 
+<a class="pdfs" href="TNY176pn-datasheet.html" title="TNY176pn">TNY176pn</a> 
+<a class="pdfs" href="74HC%2FHCT%2FHCU%2FHCMOS%20Logic%20Package%20Information-datasheet.html" title="74HC/HCT/HCU/HCMOS Logic Package Information">74HC/HCT/HCU/HCMOS Logic Package Information</a> 
+<a class="pdfs" href="atheros%20ar7240-datasheet.html" title="atheros ar7240">atheros ar7240</a> 
+<a class="pdfs" href="mip2f2-datasheet.html" title="mip2f2">mip2f2</a> 
+<a class="pdfs" href="LD33%20VOLTAGE%20REGULATOR-datasheet.html" title="LD33 VOLTAGE REGULATOR">LD33 VOLTAGE REGULATOR</a> 
+<a class="pdfs" href="C4106%20transistor-datasheet.html" title="C4106 transistor">C4106 transistor</a> 
+<a class="pdfs" href="TLO72-datasheet.html" title="TLO72">TLO72</a> 
+<a class="pdfs" href="6ES7%20321-1BL00-0AA0-datasheet.html" title="6ES7 321-1BL00-0AA0">6ES7 321-1BL00-0AA0</a> 
+<a class="pdfs" href="optocoupler%20817b-datasheet.html" title="optocoupler 817b">optocoupler 817b</a> 
+<a class="pdfs" href="NEC%202561-datasheet.html" title="NEC 2561">NEC 2561</a> 
+<a class="pdfs" href="c102%20TRANSISTOR-datasheet.html" title="c102 TRANSISTOR">c102 TRANSISTOR</a> 
+<a class="pdfs" href="transistor%20D331%20circuit%20diagram%20application-datasheet.html" title="transistor D331 circuit diagram application">transistor D331 circuit diagram application</a> 
+<a class="pdfs" href="LA%2078141%20VERTICAL-datasheet.html" title="LA 78141 VERTICAL">LA 78141 VERTICAL</a> 
+<a class="pdfs" href="NEC%202561A-datasheet.html" title="NEC 2561A">NEC 2561A</a> 
+<a class="pdfs" href="23N50E-datasheet.html" title="23N50E">23N50E</a> 
+<a class="pdfs" href="p181%20opto-datasheet.html" title="p181 opto">p181 opto</a> 
+<a class="pdfs" href="BC417%2A%20CSR-datasheet.html" title="BC417* CSR">BC417* CSR</a> 
+<a class="pdfs" href="STK403-120-datasheet.html" title="STK403-120">STK403-120</a> 
+<a class="pdfs" href="AN5522-datasheet.html" title="AN5522">AN5522</a> 
+<a class="pdfs" href="A1273-datasheet.html" title="A1273">A1273</a> 
+<a class="pdfs" href="cosmo%201010%20817-datasheet.html" title="cosmo 1010 817">cosmo 1010 817</a> 
+<a class="pdfs" href="MSM%207227-datasheet.html" title="MSM 7227">MSM 7227</a> 
+<a class="pdfs" href="k2611-datasheet.html" title="k2611">k2611</a> 
+<a class="pdfs" href="IN4004-datasheet.html" title="IN4004">IN4004</a> 
+<a class="pdfs" href="Ericsson%20Installation%20guide%20for%20RBS%206000-datasheet.html" title="Ericsson Installation guide for RBS 6000">Ericsson Installation guide for RBS 6000</a> 
+<a class="pdfs" href="a1273%20transistor-datasheet.html" title="a1273 transistor">a1273 transistor</a> 
+<a class="pdfs" href="c33725-datasheet.html" title="c33725">c33725</a> 
+<a class="pdfs" href="TRANSISTOR%20DATASHEET%20D1555-datasheet.html" title="TRANSISTOR DATASHEET D1555">TRANSISTOR DATASHEET D1555</a> 
+<a class="pdfs" href="K2608-datasheet.html" title="K2608">K2608</a> 
+<a class="pdfs" href="TRANSISTOR%20D2102-datasheet.html" title="TRANSISTOR D2102">TRANSISTOR D2102</a> 
+<a class="pdfs" href="PC%20MOTHERBOARD%20CIRCUIT%20diagram-datasheet.html" title="PC MOTHERBOARD CIRCUIT diagram">PC MOTHERBOARD CIRCUIT diagram</a> 
+<a class="pdfs" href="relay%20ras%201210-datasheet.html" title="relay ras 1210">relay ras 1210</a> 
+<a class="pdfs" href="P521%20OPTO-datasheet.html" title="P521 OPTO">P521 OPTO</a> 
+<a class="pdfs" href="TRANSISTOR%20D1879-datasheet.html" title="TRANSISTOR D1879">TRANSISTOR D1879</a> 
+<a class="pdfs" href="LC1-D09-datasheet.html" title="LC1-D09">LC1-D09</a> 
+<a class="pdfs" href="TRANSISTOR%20si%206822-datasheet.html" title="TRANSISTOR si 6822">TRANSISTOR si 6822</a> 
+<a class="pdfs" href="MR4020-datasheet.html" title="MR4020">MR4020</a> 
+<a class="pdfs" href="Display%207%20segmentos-datasheet.html" title="Display 7 segmentos">Display 7 segmentos</a> 
+<a class="pdfs" href="K%20D2058%20Y-datasheet.html" title="K D2058 Y">K D2058 Y</a> 
+<a class="pdfs" href="1000w%20inverter%20PURE%20SINE%20WAVE%20schematic%20diagram-datasheet.html" title="1000w inverter PURE SINE WAVE schematic diagram">1000w inverter PURE SINE WAVE schematic diagram</a> 
+<a class="pdfs" href="k2645-datasheet.html" title="k2645">k2645</a> 
+<a class="pdfs" href="C3203%20transistor-datasheet.html" title="C3203 transistor">C3203 transistor</a> 
+<a class="pdfs" href="a1273%20transistor-datasheet.html" title="a1273 transistor">a1273 transistor</a> 
+<a class="pdfs" href="circuit%20diagram%20electronic%20choke%20for%20tube%20light-datasheet.html" title="circuit diagram electronic choke for tube light">circuit diagram electronic choke for tube light</a> 
+<a class="pdfs" href="transistor%20tt%202206-datasheet.html" title="transistor tt 2206">transistor tt 2206</a> 
+<a class="pdfs" href="thermistor%20sck053-datasheet.html" title="thermistor sck053">thermistor sck053</a> 
+<a class="pdfs" href="C4106-datasheet.html" title="C4106">C4106</a> 
+<a class="pdfs" href="RBS%206601-datasheet.html" title="RBS 6601">RBS 6601</a> 
+<a class="pdfs" href="ph%204148%20zener%20diode-datasheet.html" title="ph 4148 zener diode">ph 4148 zener diode</a> 
+<a class="pdfs" href="f%204558-datasheet.html" title="f 4558">f 4558</a> 
+<a class="pdfs" href="LD33%20VOLTAGE%20REGULATOR-datasheet.html" title="LD33 VOLTAGE REGULATOR">LD33 VOLTAGE REGULATOR</a> 
+<a class="pdfs" href="eh16a-datasheet.html" title="eh16a">eh16a</a> 
+<a class="pdfs" href="u860%20diode-datasheet.html" title="u860 diode">u860 diode</a> 
+<a class="pdfs" href="PC%20MOTHERBOARD%20CIRCUIT%20diagram-datasheet.html" title="PC MOTHERBOARD CIRCUIT diagram">PC MOTHERBOARD CIRCUIT diagram</a> 
+<a class="pdfs" href="GRAPHICAL%20LCD%20interfacing%20with%20ARM%20LPC2148-datasheet.html" title="GRAPHICAL LCD interfacing with ARM LPC2148">GRAPHICAL LCD interfacing with ARM LPC2148</a> 
+<a class="pdfs" href="STR%20X6759-datasheet.html" title="STR X6759">STR X6759</a> 
+<a class="pdfs" href="PCR%20406%20J-datasheet.html" title="PCR 406 J">PCR 406 J</a> 
+<a class="pdfs" href="transistor%20NEC%20K2500-datasheet.html" title="transistor NEC K2500">transistor NEC K2500</a> 
+<a class="pdfs" href="Multiplexer%20IC%2074151-datasheet.html" title="Multiplexer IC 74151">Multiplexer IC 74151</a> 
+<a class="pdfs" href="C828%20Transistor%20datasheet-datasheet.html" title="C828 Transistor datasheet">C828 Transistor datasheet</a> 
+<a class="pdfs" href="H945-datasheet.html" title="H945">H945</a> 
+<a class="pdfs" href="ZT213LEEA-datasheet.html" title="ZT213LEEA">ZT213LEEA</a> 
+<a class="pdfs" href="TLO82-datasheet.html" title="TLO82">TLO82</a> 
+<a class="pdfs" href="PM7540-datasheet.html" title="PM7540">PM7540</a> 
+<a class="pdfs" href="DIODE%20IN4007-datasheet.html" title="DIODE IN4007">DIODE IN4007</a> 
+<a class="pdfs" href="dh321-datasheet.html" title="dh321">dh321</a> 
+<a class="pdfs" href="ULN2003AG-datasheet.html" title="ULN2003AG">ULN2003AG</a> 
+<a class="pdfs" href="D1N750-datasheet.html" title="D1N750">D1N750</a> 
+<a class="pdfs" href="2SC6073-datasheet.html" title="2SC6073">2SC6073</a> 
+<a class="pdfs" href="BR%208550-datasheet.html" title="BR 8550">BR 8550</a> 
+<a class="pdfs" href="STK2028-datasheet.html" title="STK2028">STK2028</a> 
+<a class="pdfs" href="sun%20hold%20RAS%200510-datasheet.html" title="sun hold RAS 0510">sun hold RAS 0510</a> 
+<a class="pdfs" href="transistor%20D331%20circuit%20diagram%20application-datasheet.html" title="transistor D331 circuit diagram application">transistor D331 circuit diagram application</a> 
+<a class="pdfs" href="STK411-230E-datasheet.html" title="STK411-230E">STK411-230E</a> 
+<a class="pdfs" href="7%20segment%20display%20d5611-datasheet.html" title="7 segment display d5611">7 segment display d5611</a> 
+<a class="pdfs" href="BUL6802-datasheet.html" title="BUL6802">BUL6802</a> 
+<a class="pdfs" href="B20100G-datasheet.html" title="B20100G">B20100G</a> 
+<a class="pdfs" href="IC%20741%20OPAMP%20DATASHEET-datasheet.html" title="IC 741 OPAMP DATASHEET">IC 741 OPAMP DATASHEET</a> 
+<a class="pdfs" href="induction%20cooker%20schematic%20diagram-datasheet.html" title="induction cooker schematic diagram">induction cooker schematic diagram</a> 
+<a class="pdfs" href="VARISTOR%20k275-datasheet.html" title="VARISTOR k275">VARISTOR k275</a> 
+<a class="pdfs" href="c6090-datasheet.html" title="c6090">c6090</a> 
+<a class="pdfs" href="RHR15120-datasheet.html" title="RHR15120">RHR15120</a> 
+<a class="pdfs" href="12v%20400W%20AUDIO%20AMPLIFIER%20CIRCUIT%20DIAGRAM-datasheet.html" title="12v 400W AUDIO AMPLIFIER CIRCUIT DIAGRAM">12v 400W AUDIO AMPLIFIER CIRCUIT DIAGRAM</a> 
+<a class="pdfs" href="Wiring%20Diagram%20kraus%20naimer%20ca10-datasheet.html" title="Wiring Diagram kraus naimer ca10">Wiring Diagram kraus naimer ca10</a> 
+<a class="pdfs" href="transistor%20BC%20945-datasheet.html" title="transistor BC 945">transistor BC 945</a> 
+<a class="pdfs" href="K3569-datasheet.html" title="K3569">K3569</a> 
+<a class="pdfs" href="D5611%20A%2FB-datasheet.html" title="D5611 A/B">D5611 A/B</a> 
+<a class="pdfs" href="c33740-datasheet.html" title="c33740">c33740</a> 
+<a class="pdfs" href="LD33%20VOLTAGE%20REGULATOR-datasheet.html" title="LD33 VOLTAGE REGULATOR">LD33 VOLTAGE REGULATOR</a> 
+<a class="pdfs" href="transistor%20C3229-datasheet.html" title="transistor C3229">transistor C3229</a> 
+<a class="pdfs" href="20N60C3-datasheet.html" title="20N60C3">20N60C3</a> 
+<a class="pdfs" href="MOSFET%204407-datasheet.html" title="MOSFET 4407">MOSFET 4407</a> 
+  </td>
+ </tr>
+</table>
+</div>
+
+<div class="view">
+ <h2>Datasheet Archive Search Statistics</h2>
+</div>
+
+<div id="top_technology_datasheets" class="xref">
+<table id="top_technology">
+<tr>
+ <td style="width: 100%;">
+   <a class="pdfs" href="http://www.datasheetarchive.com/technology/" title="500 most popular technology searches">View the 500 most popular technology searches</a>
+   <a class="pdfs" href="http://www.datasheetarchive.com/datasheet-searches/" title="365 day datasheet search history">View our 365 day datasheet search history</a>
+   <a class="pdfs" href="http://www.datasheetarchive.com/databooks/" title="Data book scanning project">12,525 electronic component data books</a>
+   <a class="pdfs" href="http://www.datasheetarchive.com/more-databooks/" title="Data book scanning project - more data books">more data books</a>
+   <a class="pdfs" href="http://www.datasheetarchive.com/datasheet-pdf/49.html" title="Recent Introductions, Promotions, and Offers">Recent Introductions, Promotions, and Offers</a>
+ </td>
+</tr>
+</table>
+</div>
+
+<div class="view">
+ <h2>Browse Parts</h2>
+</div>
+
+<div id="browse_datasheets" class="xref">
+<table id="browse_datasheet">
+<tr>
+ <td style="width: 100%;">
+   <a class="pdfs" href="http://www.datasheetarchive.com/datasheet/C-pdf.html" title="Browse our parts database">Browse by Part Number</a>
+   <a class="pdfs" href="http://www.datasheetarchive.com/manufacturers/" title="Browse by manufacturer">Browse by Manufacturer</a>
+ </td>
+</tr>
+</table>
+</div>
+
+<div class="view">
+ <h2>Top Part Downloads</h2>
+</div>
+
+<div id="top_parts" class="xref">
+<table id="top_part">
+<tr>
+ <td style="width: 100%;">
+<a class="pdfs" href="LM317-datasheet.html" title="LM317 datasheet">LM317 datasheet</a>
+<a class="pdfs" href="78L05-datasheet.html" title="78L05 datasheet">78L05 datasheet</a>
+<a class="pdfs" href="7812-datasheet.html" title="7812 datasheet">7812 datasheet</a>
+<a class="pdfs" href="NE555-datasheet.html" title="NE555 datasheet">NE555 datasheet</a>
+<a class="pdfs" href="7805-datasheet.html" title="7805 datasheet">7805 datasheet</a>
+<a class="pdfs" href="LM358-datasheet.html" title="LM358 datasheet">LM358 datasheet</a>
+<a class="pdfs" href="PIC16F84A-datasheet.html" title="PIC16F84A datasheet">PIC16F84A datasheet</a>
+<a class="pdfs" href="2N3055-datasheet.html" title="2N3055 datasheet">2N3055 datasheet</a>
+<a class="pdfs" href="LM339-datasheet.html" title="LM339 datasheet">LM339 datasheet</a>
+<a class="pdfs" href="TL082-datasheet.html" title="TL082 datasheet">TL082 datasheet</a>
+<a class="pdfs" href="2SC1815-datasheet.html" title="2SC1815 datasheet">2SC1815 datasheet</a>
+<a class="pdfs" href="TL084-datasheet.html" title="TL084 datasheet">TL084 datasheet</a>
+<a class="pdfs" href="74LS00-datasheet.html" title="74LS00 datasheet">74LS00 datasheet</a>
+<a class="pdfs" href="PIC16F873-datasheet.html" title="PIC16F873 datasheet">PIC16F873 datasheet</a>
+<a class="pdfs" href="2N2222-datasheet.html" title="2N2222 datasheet">2N2222 datasheet</a>
+<a class="pdfs" href="MAX232-datasheet.html" title="MAX232 datasheet">MAX232 datasheet</a>
+<a class="pdfs" href="LM741-datasheet.html" title="LM741 datasheet">LM741 datasheet</a>
+<a class="pdfs" href="1N4148-datasheet.html" title="1N4148 datasheet">1N4148 datasheet</a>
+<a class="pdfs" href="PIC16F877-datasheet.html" title="PIC16F877 datasheet">PIC16F877 datasheet</a>
+<a class="pdfs" href="TLC555-datasheet.html" title="TLC555 datasheet">TLC555 datasheet</a>
+<a class="pdfs" href="BC548-datasheet.html" title="BC548 datasheet">BC548 datasheet</a>
+<a class="pdfs" href="1SS106-datasheet.html" title="1SS106 datasheet">1SS106 datasheet</a>
+<a class="pdfs" href="ULN2003-datasheet.html" title="ULN2003 datasheet">ULN2003 datasheet</a>
+<a class="pdfs" href="BC337-datasheet.html" title="BC337 datasheet">BC337 datasheet</a>
+<a class="pdfs" href="7808-datasheet.html" title="7808 datasheet">7808 datasheet</a>
+<a class="pdfs" href="TL431-datasheet.html" title="TL431 datasheet">TL431 datasheet</a>
+<a class="pdfs" href="7400-datasheet.html" title="7400 datasheet">7400 datasheet</a>
+<a class="pdfs" href="TLP521-datasheet.html" title="TLP521 datasheet">TLP521 datasheet</a>
+<a class="pdfs" href="LM2575-datasheet.html" title="LM2575 datasheet">LM2575 datasheet</a>
+<a class="pdfs" href="78L12-datasheet.html" title="78L12 datasheet">78L12 datasheet</a>
+<a class="pdfs" href="74HC00-datasheet.html" title="74HC00 datasheet">74HC00 datasheet</a>
+<a class="pdfs" href="LM393-datasheet.html" title="LM393 datasheet">LM393 datasheet</a>
+<a class="pdfs" href="ULN2803-datasheet.html" title="ULN2803 datasheet">ULN2803 datasheet</a>
+<a class="pdfs" href="74HC74-datasheet.html" title="74HC74 datasheet">74HC74 datasheet</a>
+<a class="pdfs" href="PC817-datasheet.html" title="PC817 datasheet">PC817 datasheet</a>
+<a class="pdfs" href="LM318-datasheet.html" title="LM318 datasheet">LM318 datasheet</a>
+<a class="pdfs" href="LM7805-datasheet.html" title="LM7805 datasheet">LM7805 datasheet</a>
+<a class="pdfs" href="74HC125-datasheet.html" title="74HC125 datasheet">74HC125 datasheet</a>
+<a class="pdfs" href="LM317T-datasheet.html" title="LM317T datasheet">LM317T datasheet</a>
+<a class="pdfs" href="2N3906-datasheet.html" title="2N3906 datasheet">2N3906 datasheet</a>
+<a class="pdfs" href="74LS247-datasheet.html" title="74LS247 datasheet">74LS247 datasheet</a>
+<a class="pdfs" href="LM311-datasheet.html" title="LM311 datasheet">LM311 datasheet</a>
+<a class="pdfs" href="79L05-datasheet.html" title="79L05 datasheet">79L05 datasheet</a>
+<a class="pdfs" href="TL494-datasheet.html" title="TL494 datasheet">TL494 datasheet</a>
+<a class="pdfs" href="LM833-datasheet.html" title="LM833 datasheet">LM833 datasheet</a>
+<a class="pdfs" href="BD139-datasheet.html" title="BD139 datasheet">BD139 datasheet</a>
+<a class="pdfs" href="4069UB-datasheet.html" title="4069UB datasheet">4069UB datasheet</a>
+<a class="pdfs" href="BC557-datasheet.html" title="BC557 datasheet">BC557 datasheet</a>
+<a class="pdfs" href="74LS04-datasheet.html" title="74LS04 datasheet">74LS04 datasheet</a>
+<a class="pdfs" href="PIC16F628-datasheet.html" title="PIC16F628 datasheet">PIC16F628 datasheet</a>
+<a class="pdfs" href="LM324-datasheet.html" title="LM324 datasheet">LM324 datasheet</a>
+<a class="pdfs" href="74HC04-datasheet.html" title="74HC04 datasheet">74HC04 datasheet</a>
+<a class="pdfs" href="LM386-datasheet.html" title="LM386 datasheet">LM386 datasheet</a>
+<a class="pdfs" href="BC547-datasheet.html" title="BC547 datasheet">BC547 datasheet</a>
+<a class="pdfs" href="74HC14-datasheet.html" title="74HC14 datasheet">74HC14 datasheet</a>
+<a class="pdfs" href="2N3904-datasheet.html" title="2N3904 datasheet">2N3904 datasheet</a>
+<a class="pdfs" href="LM337-datasheet.html" title="LM337 datasheet">LM337 datasheet</a>
+<a class="pdfs" href="7447-datasheet.html" title="7447 datasheet">7447 datasheet</a>
+<a class="pdfs" href="2SA1015-datasheet.html" title="2SA1015 datasheet">2SA1015 datasheet</a>
+<a class="pdfs" href="1N4007-datasheet.html" title="1N4007 datasheet">1N4007 datasheet</a>
+<a class="pdfs" href="74LS07-datasheet.html" title="74LS07 datasheet">74LS07 datasheet</a>
+<a class="pdfs" href="LM555-datasheet.html" title="LM555 datasheet">LM555 datasheet</a>
+<a class="pdfs" href="7404-datasheet.html" title="7404 datasheet">7404 datasheet</a>
+<a class="pdfs" href="74HC138-datasheet.html" title="74HC138 datasheet">74HC138 datasheet</a>
+<a class="pdfs" href="4558-datasheet.html" title="4558 datasheet">4558 datasheet</a>
+<a class="pdfs" href="C945-datasheet.html" title="C945 datasheet">C945 datasheet</a>
+<a class="pdfs" href="IRF540-datasheet.html" title="IRF540 datasheet">IRF540 datasheet</a>
+<a class="pdfs" href="LM324N-datasheet.html" title="LM324N datasheet">LM324N datasheet</a>
+<a class="pdfs" href="4017-datasheet.html" title="4017 datasheet">4017 datasheet</a>
+<a class="pdfs" href="LM2940-datasheet.html" title="LM2940 datasheet">LM2940 datasheet</a>
+<a class="pdfs" href="7490-datasheet.html" title="7490 datasheet">7490 datasheet</a>
+<a class="pdfs" href="LM319-datasheet.html" title="LM319 datasheet">LM319 datasheet</a>
+<a class="pdfs" href="catalog-datasheet.html" title="datasheet catalog">datasheet catalog</a>
+<a class="pdfs" href="digi-key-datasheet.html" title="digi-key datasheet">digi-key datasheet</a>
+<a class="pdfs" href="mouser-datasheet.html" title="mouser datasheet">mouser datasheet</a>
+<a class="pdfs" href="farnell-datasheet.html" title="farnell datasheet">farnell datasheet</a>
+<a class="pdfs" href="avnet-datasheet.html" title="avnet datasheet">avnet datasheet</a>
+<a class="pdfs" href="tti-datasheet.html" title="tti datasheet">tti datasheet</a>
+<a class="pdfs" href="newark-datasheet.html" title="newark datasheet">newark datasheet</a>
+<a class="pdfs" href="all-datasheet.html" title="alldatasheet">all datasheet</a>
+<a class="pdfs" href="nu-horizons-datasheet.html" title="nu horizons datasheet">nu horizons datasheet</a>
+<a class="pdfs" href="diode-datasheet.html" title="Diode datasheet">Diode datasheet</a>
+<a class="pdfs" href="diode%20cross%20reference-datasheet.html" title="Diode cross reference">Diode cross reference</a>
+<a class="pdfs" href="semiconductor-datasheet.html" title="Semiconductor datasheet">Semiconductor datasheet</a>
+<a class="pdfs" href="application%20notes-datasheet.html" title="Application Notes">Application Notes</a>
+<a class="pdfs" href="transistor-datasheet.html" title="Transistor datasheet">Transistor datasheet</a>
+<a class="pdfs" href="operational%20amplifier-datasheet.html" title="Operational Amplifier">Operational Amplifier</a>
+<a class="pdfs" href="led-datasheet.html" title="LED datasheet">LED datasheet</a>
+<a class="pdfs" href="led%20cross%20reference-datasheet.html" title="LED cross reference">LED cross reference</a>
+<a class="pdfs" href="capacitor-datasheet.html" title="Capacitor datasheet">Capacitor datasheet</a>
+<a class="pdfs" href="capacitor%20cross%20reference-datasheet.html" title="Capacitor cross reference">Capacitor cross reference</a>
+<a class="pdfs" href="connector-datasheet.html" title="Connector datasheet">Connector datasheet</a>
+<a class="pdfs" href="connector%20cross%20reference-datasheet.html" title="Connector cross reference">Connector cross reference</a>
+<a class="pdfs" href="resistor-datasheet.html" title="Resistor datasheet">Resistor datasheet</a>
+<a class="pdfs" href="resistor%20cross%20reference-datasheet.html" title="Resistor cross reference">Resistor cross reference</a>
+<a class="pdfs" href="lcd-datasheet.html" title="LCD datasheet">LCD datasheet</a>
+<a class="pdfs" href="lcd%20cross%20reference-datasheet.html" title="LCD cross reference">LCD cross reference</a>
+<a class="pdfs" href="relay-datasheet.html" title="Relay datasheet">Relay datasheet</a>
+<a class="pdfs" href="relay%20cross%20reference-datasheet.html" title="Relay cross reference">Relay cross reference</a>
+<a class="pdfs" href="processor-datasheet.html" title="Processor datasheet">Processor datasheet</a>
+<a class="pdfs" href="processor%20cross%20reference-datasheet.html" title="Processor cross reference">Processor cross reference</a>
+ </td>
+</tr>
+</table>
+</div>
+
+<div id="wide_ad_unit" class="wide_ads"></div>
+
+<footer>
+ <ul>
+  <li><a href="http://www.datasheetarchive.com/">Home</a></li>
+  <li><a href="http://www.datasheetarchive.com/about.html#search">Search help</a></li>
+  <li><a href="http://www.datasheetarchive.com/about.html#privacy">Privacy Policy</a></li>
+  <li><a href="http://www.datasheetarchive.com/about.html#disclaimer">Disclaimer</a></li>
+ </ul>
+ <p id="copy">&copy; 2012 Datasheet Archive</p>
+</footer>
+
+<script language="JavaScript" type="text/JavaScript"> 
+<!--
+google_ad_client = "pub-8557903346323183";
+google_ad_output = 'js';
+google_max_num_ads = '6';
+google_feedback = "on";
+google_ad_type = "text";
+-->
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32515981-1']);
+  _gaq.push(['_setDomainName', 'datasheetarchive.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+ var options = {
+  script:"http://www.datasheetarchive.com/suggestions.php?",
+  varname:"input"
+ };
+ var as_xml = new AutoSuggest('searchbox', options);
+</script>
+</body>
+</html>

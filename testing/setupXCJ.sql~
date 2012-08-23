@@ -1,0 +1,601 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Jun 22, 2011 at 06:56 AM
+-- Server version: 5.1.51
+-- PHP Version: 5.3.6-pl0-gentoo
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `partdb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` mediumtext NOT NULL,
+  `parentnode` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `parentnode` (`parentnode`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=206 ;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`, `parentnode`) VALUES
+(8, 'SPG Regler verschieben', 7),
+(199, '1 Zubehör', 150),
+(200, '3 Spindeltrimmer', 149),
+(10, 'Kondensatoren', 9),
+(15, 'Folienkondensatoren', 10),
+(14, 'Elektrolytkondensatoren', 10),
+(16, 'Polystyrol MKS MKY', 15),
+(41, '3 Elektromechanische Bauelemente', 0),
+(40, '2 Passive Bauelemente ', 0),
+(39, '1 Aktive Bauelemente', 0),
+(22, 'Aluminium-Elko', 14),
+(43, '5 Leitung und Leiter', 0),
+(42, '4 Schwingungserzeugende Bauelemente', 0),
+(25, 'Kabel', 6),
+(26, 'Koaxialkabel', 6),
+(27, 'Leiterplatten', 6),
+(45, '7 Sensoren', 0),
+(44, '6 Aktoren', 0),
+(46, '8 Module & Systeme', 0),
+(33, 'Energiequellen', 32),
+(34, 'Röhren', 32),
+(35, 'Halbleiter', 32),
+(36, 'Optoelektronische Bauelemente', 32),
+(47, '9 Mechanische Elemente', 0),
+(48, 'A Verbrauchsmaterial', 0),
+(49, '1 Schrumpfschlauch', 48),
+(50, '2 Klebetechnik', 48),
+(51, '1 Schrauben', 47),
+(52, '2 Mutter', 47),
+(54, '3 Unterlagscheiben', 47),
+(59, '5 Gehäuse', 47),
+(58, '6 Kühltechnik', 47),
+(60, '4 Abstandshalter', 47),
+(61, '1 Schaltnetzteile', 46),
+(62, '1 Mikrofon', 45),
+(63, '1 Elektromotoren', 44),
+(64, '2 Schrittmotoren', 44),
+(65, '3 Elektromagnet', 44),
+(66, '4 Lautsprecher', 44),
+(67, '1 Schwingquarze', 42),
+(68, '2 Quarzoszillatoren', 42),
+(69, '1 Leitung', 43),
+(70, '2 Koaxialkabel', 43),
+(71, '3 Flachbandleitung', 43),
+(72, '4 Litze', 43),
+(73, '5 Drähte', 43),
+(74, '6 Leiterplatinen', 43),
+(75, '1 Halbleiter', 39),
+(76, '5 Röhren', 39),
+(77, '1 Nixie-Röhre', 76),
+(78, '4 Energiequellen', 39),
+(79, '1 Batterie', 78),
+(80, '2 Akku', 78),
+(81, '3 Solarzelle', 78),
+(82, '4 # Peltier-Element ', 78),
+(83, '5 Generator', 78),
+(84, '3 Optoelektronische Bauelemente', 39),
+(85, '1 Laserdiode', 84),
+(86, '2 Leuchtdioden', 84),
+(87, '3 LCD', 84),
+(88, '4 Lichtschranke', 84),
+(89, '5 Fotohalbleiter', 84),
+(90, '1 Fotodiode', 89),
+(91, '2 Fototransistor', 89),
+(92, '3 Solid-state-Relais ', 89),
+(93, '4 CCD & CMOS-Sensoren ', 89),
+(94, '1 Universal', 86),
+(95, '2 RGB', 86),
+(96, '3 HighPower', 86),
+(97, '4 LED Array ', 86),
+(98, '5 7-Segment ', 86),
+(99, '6 Zubehör', 86),
+(100, '1 Dioden', 75),
+(101, '2 Transistoren', 75),
+(102, '3 Thyristor', 75),
+(103, '4 Diac', 75),
+(104, '5 Triac', 75),
+(105, '6 Piezoelemente', 75),
+(106, '1 NPN', 101),
+(107, '2 PNP', 101),
+(108, '3 Darlington-Transistor ', 101),
+(109, '4 Sperrschicht-Feldeffekttransistor (JFET) ', 101),
+(110, '5 Metalloxid-Feldeffekttransistor (MOSFET) ', 101),
+(111, '6 Leistungs-Metalloxid-Feldeffekttransistor (Power MOSFET) ', 101),
+(112, '1 Universaldioden', 100),
+(113, '2 Gleichrichter', 100),
+(114, '3 Zener-Diode', 100),
+(115, '4 Schottky-Diode ', 100),
+(116, '5 Kapazitätsdiode', 100),
+(117, '1 Widerstand', 40),
+(118, '2 Kondensatoren', 40),
+(119, '3 Induktive Bauelemente', 40),
+(120, '4 Sonstige passive Bauelemente', 40),
+(121, '1 elektrische Leuchtmittel ', 120),
+(122, '2 Memristor', 120),
+(123, '3 Fluxkompensatoren', 120),
+(124, '1 unter 88 Meilen / Stunde', 123),
+(125, '2 über 88 Meilen / Stunde', 123),
+(126, '1 Induktivität', 119),
+(127, '2 Spule', 119),
+(128, '3 Drossel', 119),
+(129, '4 Transformatoren', 119),
+(130, '5 Übertrager', 119),
+(131, '1 Keramikkondensator', 118),
+(132, '2 Kunststoff-Folienkondensator ', 118),
+(133, '3 Gold-Cap ', 118),
+(134, '4 Styroflexkondensator', 118),
+(135, '5 Elektrolytkondensatoren', 118),
+(136, '6 Glimmerkondensatoren', 118),
+(137, '7 Variable Kondensatoren', 118),
+(138, '1 Aluminium-Elektrolytkondensatoren', 135),
+(139, '2 Tantal-Elektrolytkondensator ', 135),
+(140, '3 Bipolar-Elektrolytkondensator ', 135),
+(141, '1 Polyester MKT MKH', 132),
+(142, '2 Polycarbonat MKM MKC ', 132),
+(143, '3 Zelluloseazetat MKU MKL ', 132),
+(144, '4 Polystyrol MKS MKY ', 132),
+(145, '5 Polypropylen MKP ', 132),
+(146, '1 Festwiderstände', 117),
+(147, '2 Nichtlineare Widerstände', 117),
+(148, '3 Varistoren', 117),
+(149, '4 Variable Widerstände ', 117),
+(150, '1 Potentiometer', 149),
+(151, '2 Trimwiederstand', 149),
+(152, '1 Kaltleiter (PTC) ', 147),
+(153, '2 PT100', 147),
+(154, '3 Heißleiter (NTC) ', 147),
+(155, '1 Kohleschickt', 146),
+(156, '2 Metallschicht', 146),
+(157, '3 Shunt', 146),
+(158, '4 Heizwiderstand', 146),
+(159, '5 Fotowiderstand', 146),
+(160, '1 Schalter', 41),
+(161, '2 Taster', 41),
+(162, '3 Verbinder', 41),
+(163, '4 Relais', 41),
+(164, '5 Schütze', 41),
+(165, '6 Leitungs-, Motorschutzschalter ', 41),
+(166, '1 Schraubklemmen', 162),
+(167, '2 Löttechnik', 162),
+(168, '3 Steckverbinder', 162),
+(169, '1 Koaxial', 168),
+(170, '2 Rund', 168),
+(171, '3 Rechteckig ', 168),
+(172, '4 Reihenklemmen', 168),
+(173, '5 Leiterplattenverbinder', 168),
+(174, '6 Steckverbinderzubehör', 168),
+(175, '7 Fassungen & Sockel', 168),
+(176, '1 IC Sockel', 175),
+(177, '2 Integrierte Schaltkreise (ICs) ', 39),
+(178, '1 ROM', 177),
+(179, '2 RAM', 177),
+(180, '3 Mikroprozessoren', 177),
+(181, '4 Analog ICs ', 177),
+(182, '5 Logikgatter', 177),
+(183, '1 TTL', 182),
+(184, '2 CMOS', 182),
+(185, '6 Operationsverstärker', 177),
+(186, '7 Spannungsregler', 177),
+(187, '8 Optokoppler', 177),
+(188, '9 Digital-Analog-Umsetzer, Analog-Digital-Umsetzer ', 177),
+(189, 'A GAL, PAL, FPGA', 177),
+(190, '8 Laborstecker', 168),
+(191, '7 Brückengleichrichter', 75),
+(192, '7 Sicherungen & Zubehör', 41),
+(193, '5 Lüfter', 44),
+(194, '6 Lampen', 84),
+(195, '7 Glasfasertechnik', 84),
+(196, '5 Widerstandsnetzwerke', 117),
+(197, '1 SMD', 196),
+(198, '6 Drahtwiderstand', 146),
+(201, '7 Drahtstifte', 47),
+(202, '8 Federn', 47),
+(203, '9 Dübel', 47),
+(204, 'A Sonstiges', 47),
+(205, 'To be determined!', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `datasheets`
+--
+
+CREATE TABLE IF NOT EXISTS `datasheets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `part_id` int(11) NOT NULL DEFAULT '0',
+  `datasheeturl` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `part_id` (`part_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `datasheets`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `footprints`
+--
+
+CREATE TABLE IF NOT EXISTS `footprints` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
+
+--
+-- Dumping data for table `footprints`
+--
+
+INSERT INTO `footprints` (`id`, `name`) VALUES
+(1, 'TO220'),
+(2, 'TO220-3'),
+(3, 'TO92-3'),
+(4, 'RM2,5'),
+(5, 'RM5'),
+(6, 'RM7,5'),
+(7, 'RM10'),
+(8, 'ohne'),
+(9, 'TO220-7'),
+(10, 'TO3-3'),
+(11, 'TO3-4'),
+(12, 'DIP8'),
+(13, 'DIP14'),
+(14, 'DIP16'),
+(15, 'DIP18'),
+(16, 'DIP20'),
+(17, 'DIP6'),
+(19, 'TO39'),
+(20, 'TO18'),
+(21, 'TO126'),
+(23, 'DIP28'),
+(24, 'SOP28'),
+(25, 'SOIC20'),
+(26, 'P-DSO-20'),
+(27, 'SOIC16'),
+(28, 'SOIC14'),
+(29, 'P-SOJ-20'),
+(30, 'SIP8'),
+(31, 'SIP9'),
+(32, 'SIP4'),
+(33, 'SIP10'),
+(34, 'SIP6'),
+(35, 'SIP11'),
+(36, 'SIP7'),
+(37, 'DIP10'),
+(38, 'TO-251AA '),
+(39, 'DIP40'),
+(40, 'SIP5'),
+(41, 'F-124'),
+(42, 'TO225A'),
+(43, 'DIP24'),
+(44, 'TO-66'),
+(45, 'DIP48'),
+(46, 'To be determined!');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `parts`
+--
+
+CREATE TABLE IF NOT EXISTS `parts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_category` int(11) NOT NULL DEFAULT '0',
+  `name` mediumtext NOT NULL,
+  `instock` int(11) NOT NULL DEFAULT '0',
+  `mininstock` int(11) NOT NULL DEFAULT '0',
+  `comment` mediumtext NOT NULL,
+  `id_footprint` int(11) NOT NULL DEFAULT '0',
+  `id_storeloc` int(11) NOT NULL DEFAULT '0',
+  `id_supplier` int(11) NOT NULL DEFAULT '0',
+  `supplierpartnr` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_storeloc` (`id_storeloc`),
+  KEY `id_category` (`id_category`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=174 ;
+
+--
+-- Dumping data for table `parts`
+--
+
+INSERT INTO `parts` (`id`, `id_category`, `name`, `instock`, `mininstock`, `comment`, `id_footprint`, `id_storeloc`, `id_supplier`, `supplierpartnr`) VALUES
+(1,205,'CPLD Xilinx xc9636 on PCB and headers suitable for breadboards',5,0,'',46,1,1,''),
+(2,205,'USB programmer',1,0,'',46,1,1,''),
+(3,205,'Ultrasonic sensors HC-SR04',9,0,'',46,1,1,''),
+(4,205,'RC toy car',1,0,'http://item.taobao.com/item.htm?id=7905841099',46,1,1,''),
+(5,205,'“Blue-pack” rechargeable battery pack (same as included with hobby cars) 400mAh, 6.0V, rechargeable',6,0,'http://item.taobao.com/item.htm?id=5257085554',46,1,1,''),
+(6,205,'connectors for batteries (type compatible with battery pack)',8,0,'',46,1,1,''),
+(7,205,'Inexpensive infrared e18-d80nk, 3-80cm',8,0,'',46,1,1,''),
+(8,205,'Precise infrared distance ranging sensor Sharp IR GP2Y0A02',4,0,'',46,1,1,''),
+(9,205,'Precise infrared distance ranging sensor Sharp IR sensor GP2Y0A02YK0F (20-150cm)',4,0,'',46,1,1,''),
+(10,205,'Ultrasonic distance ranging sensor HC-SR04',1,0,'',46,1,1,''),
+(11,205,'Arduino Duemilanove',3,0,'',46,1,1,''),
+(12,205,'L298 Motor Shield',1,0,'http://item.taobao.com/item.htm?id=8350736618',46,1,1,''),
+(13,205,'RF communication solution (for telemetry: low-bandwidth, medium-range or short-range with repeaters, low-power, inexpensive)',1,0,'http://www.nordicsemi.com/index.cfm?obj=product&act=display&pro=103',46,1,1,''),
+(14,205,'USB PC dongle',1,0,'http://www.nordicsemi.com/index.cfm?obj=product&act=display&pro=102 http://item.taobao.com/item.htm?id=8869725924',46,1,1,''),
+(15,205,'Bumper switch/whiskers',1,0,'http://www.lynxmotion.com/p-60-bumper-switch-assembly-kit.aspx http://www.impactlab.net/2006/10/08/designing-robots-with-whiskers/',46,1,1,''),
+(16,131,'8pF',1,0,'',46,1,1,''),
+(17,131,'15pF',1,0,'',46,1,1,''),
+(18,131,'10pF',1,0,'',46,1,1,''),
+(19,131,'33pF',1,0,'',46,1,1,''),
+(20,131,'47pF',1,0,'',46,1,1,''),
+(21,131,'68pF',1,0,'',46,1,1,''),
+(22,131,'100pF',1,0,'',46,1,1,''),
+(23,131,'470pF',1,0,'',46,1,1,''),
+(24,131,302,1,0,'',46,1,1,''),
+(25,131,'33nF',1,0,'',46,1,1,''),
+(26,131,104,1,0,'',46,1,1,''),
+(27,131,103,1,0,'',46,1,1,''),
+(28,205,'47uF electrolytic',1,0,'',46,1,1,''),
+(29,205,'100uF electrolytic',1,0,'',46,1,1,''),
+(30,156,100,1,0,'',46,1,1,''),
+(31,156,150,1,0,'',46,1,1,''),
+(32,156,300,1,0,'',46,1,1,''),
+(33,156,330,1,0,'',46,1,1,''),
+(34,156,560,1,0,'',46,1,1,''),
+(35,156,'1K',1,0,'',46,1,1,''),
+(36,156,'1.5K',1,0,'',46,1,1,''),
+(37,156,'2.2K',1,0,'',46,1,1,''),
+(38,156,'35K',1,0,'',46,1,1,''),
+(39,156,'120K',1,0,'',46,1,1,''),
+(40,156,'6.8K',1,0,'',46,1,1,''),
+(41,156,'2.2M',1,0,'',46,1,1,''),
+(42,205,'2.7uH',1,0,'',46,1,1,''),
+(43,205,'4.7uH',1,0,'',46,1,1,''),
+(44,205,'10uH,',1,0,'',46,1,1,''),
+(45,205,'Zener diode: 2.7V',1,0,'',46,1,1,''),
+(46,205,'Zener diode: 3V',1,0,'',46,1,1,''),
+(47,205,'Zener diode: 5V',1,0,'',46,1,1,''),
+(48,205,'Diode: 1N4148',1,0,'',46,1,1,''),
+(49,205,'Transistor 2N222A',1,0,'',46,1,1,''),
+(50,205,'Transistor 2N3904 (NPN)',1,0,'',46,1,1,''),
+(51,205,'Transistor 2N3906 (PNP)',1,0,'',46,1,1,''),
+(52,205,'Transistor C1815',1,0,'',46,1,1,''),
+(53,205,'Transistor 8550',1,0,'',46,1,1,''),
+(54,205,'Transistor 8050',1,0,'',46,1,1,''),
+(55,205,'Transistor A1015',1,0,'',46,1,1,''),
+(56,205,'555 timers',1,0,'',46,1,1,''),
+(57,205,'Electret Condenser Microphone',1,0,'',46,1,1,''),
+(58,205,'NAND2 x4 74HC00 DIP',50,0,'http://au.alibaba.com/product/239198934-Condenser-Microphone-AMFO97A44NBAB.html',46,1,1,''),
+(59,205,'NOR2 x4 74HC02 DIP',50,0,'',46,1,1,''),
+(60,205,'INV x6 74HC04 DIP',50,0,'',46,1,1,''),
+(61,205,'AND2 x4 74HC08 DIP',50,0,'',46,1,1,''),
+(62,205,'ST x6 74HC14 DIP',50,0,'',46,1,1,''),
+(63,205,'OR2 x4 74HC32 DIP',50,0,'',46,1,1,''),
+(64,205,'XOR x4 74HC86 DIP',25,0,'',46,1,1,''),
+(65,205,'3-8 dec 74HC138 DIP',25,0,'',46,1,1,''),
+(66,205,'MUX4 74HC153 DIP',50,0,'',46,1,1,''),
+(67,205,'4-16 Dec 74HC154 DIPThin',25,0,'',46,1,1,''),
+(68,205,'Shift Reg 74HC165 DIP',25,0,'',46,1,1,''),
+(69,205,'DFF 74HC174 DIP',25,0,'',46,1,1,''),
+(70,205,'bin counter 74HC193 DIP',25,0,'',46,1,1,''),
+(71,205,'BCD 7Seg 74LS247 DIP',25,0,'',46,1,1,''),
+(72,205,'5V Regulator 7805 TO220',50,0,'',46,1,1,''),
+(73,205,'7seg LED Common Anode 0.5英寸 1位数 共阳红色LED数码管 0.5寸',25,0,'',46,1,1,''),
+(74,205,'8bar LED 10线 LED 光柱显示 DIP',25,0,'',46,1,1,''),
+(75,205,'1u 50v 电解电容',50,0,'',46,1,1,''),
+(76,205,'10u 25v 电解电容',50,0,'',46,1,1,''),
+(77,205,'100u 16v 电解电容',50,0,'',46,1,1,''),
+(78,205,'200R 电阻 1/4W',1000,0,'',46,1,1,''),
+(79,205,'1k 电阻 1/4W',1000,0,'',46,1,1,''),
+(80,205,'10k 电阻 1/4W',1000,0,'',46,1,1,''),
+(81,205,'100k 电阻 1/4W',1000,0,'',46,1,1,''),
+(82,205,'100k pot 电位器 精密多圈可调',50,0,'',46,1,1,''),
+(83,205,'Variety of headers that fit on breaboard (2.54mm spacing)',1,0,'',46,1,1,''),
+(84,205,'Contact strips',1,0,'',46,1,1,''),
+(85,205,'Plastic offsets and motherboard mounting',1,0,'',46,1,1,''),
+(86,205,'Screws with nuts',1,0,'',46,1,1,''),
+(87,205,'Velcro strips',1,0,'',46,1,1,''),
+(88,205,'Tie-wraps',1,0,'',46,1,1,''),
+(89,205,'Servos! Big ones, small ones, silent (plastic gear and higher quality motors)',1,0,'',46,1,1,''),
+(90,205,'Rotary solenoid',1,0,'http://www.ledex.com/rotary-solenoid/rotary-solenoid-comparison.html',46,1,1,''),
+(91,205,'More of the wires in the starter kit, organized by length+color',1,0,'',46,1,1,''),
+(92,205,'Alligator clips (particularly small ones)',1,0,'',46,1,1,''),
+(93,205,'Hall effect sensors',1,0,'',46,1,1,''),
+(94,205,'Accelerometers',1,0,'',46,1,1,''),
+(95,205,'Gyroscopes',1,0,'',46,1,1,''),
+(96,205,'Compass',1,0,'',46,1,1,''),
+(97,205,'aluminium',1,0,'',46,1,1,''),
+(98,205,'wood',1,0,'',46,1,1,''),
+(99,205,'Workbench light',1,0,'',46,1,1,''),
+(100,205,'Workbench helper hand',1,0,'',46,1,1,''),
+(101,205,'Caliper (Precision measurement instrument)',1,0,'',46,1,1,''),
+(102,205,'Scissors',1,0,'',46,1,1,''),
+(103,205,'Label generator',1,0,'',46,1,1,''),
+(104,205,'Sharpie fine point permanent markers',1,0,'',46,1,1,''),
+(105,205,'fire extinguisher',1,0,'',46,1,1,''),
+(106,205,'particulate masks',1,0,'',46,1,1,''),
+(107,205,'safety glasses',1,0,'',46,1,1,''),
+(108,205,'gloves',1,0,'',46,1,1,''),
+(109,205,'Function Generator',1,0,'',46,1,1,''),
+(110,205,'Oscilloscope',1,0,'',46,1,1,''),
+(111,205,'Power Supplies',1,0,'',46,1,1,''),
+(112,205,'Soldering stations and irons',1,0,'',46,1,1,''),
+(113,205,'SMD Rework Station',1,0,'',46,1,1,''),
+(114,205,'Drill Press',1,0,'',46,1,1,''),
+(115,205,'Dremel',1,0,'',46,1,1,''),
+(116,205,'Jigsaw',1,0,'',46,1,1,''),
+(117,205,'Arduino UNO Starter Kit',1,0,'',46,1,1,''),
+(118,205,'DIY Motors/Sensors Shield for Arduino',1,0,'',46,1,1,''),
+(119,205,'InsectBot DIY Kit',1,0,'',46,1,1,''),
+(120,205,'DIY Kits from Mitch Altman',1,0,'',46,1,1,''),
+(121,205,'Soldering irons',1,0,'',46,1,1,''),
+(122,205,'SMD Rework Station',1,0,'',46,1,1,''),
+(123,205,'Multimeters',1,0,'',46,1,1,''),
+(124,205,'Tweezers',1,0,'',46,1,1,''),
+(125,205,'Drill Press',1,0,'',46,1,1,''),
+(126,205,'Dremel',1,0,'',46,1,1,''),
+(127,205,'Jigsaw',1,0,'',46,1,1,''),
+(128,205,'Mini-Mill',1,0,'',46,1,1,''),
+(129,205,'Drill',1,0,'',46,1,1,''),
+(130,205,'Lathe',1,0,'',46,1,1,''),
+(131,205,'Hot glue gun',1,0,'',46,1,1,''),
+(132,205,'Arduino Duemilanove',1,0,'',46,1,1,''),
+(133,205,'Arduino Uno',1,0,'',46,1,1,''),
+(134,205,'PandaBoard: Dual-core ARM Cortex-A9 computer',1,0,'',46,1,1,''),
+(135,205,'Nanode Ethernet-enabled Arduino',1,0,'',46,1,1,''),
+(136,205,'5VT 1610 development boards',1,0,'',46,1,1,''),
+(137,205,'Nexys3 Xilinx FPGA development board',1,0,'',46,1,1,''),
+(138,205,'Element14 & Freescale XL Star Development Board',1,0,'',46,1,1,''),
+(139,205,'Mendel RepRap (3d printer)',1,0,'',46,1,1,''),
+(140,205,'Makerbot (3D-printer)',1,0,'',46,1,1,''),
+(141,205,'Tepra King Jim SR230C Label printer',1,0,'',46,1,1,''),
+(142,205,'microservo 9g SG90 TowerPro',1,0,'http://www.dfrobot.com/index.php?route=product/product&path=47_108&product_id=255',46,1,1,''),
+(143,205,'Bus Pirate v3',1,0,'http://dangerousprototypes.com/docs/Bus_Pirate',46,1,1,''),
+(144,205,'Bus Pirate PIC programming adapter [for developers]',1,0,'http://dangerousprototypes.com/docs/Bus_Pirate_PIC_programming_adapter',46,1,1,''),
+(145,205,'Open Workbench Logic Sniffer',1,0,'http://dangerousprototypes.com/docs/Open_Bench_Logic_Sniffer',46,1,1,''),
+(146,205,'Bus Blaster v2 JTAG debugger',1,0,'http://dangerousprototypes.com/docs/Bus_Blaster',46,1,1,''),
+(147,205,'IR Toy',1,0,'http://dangerousprototypes.com/docs/USB_Infrared_Toy',46,1,1,''),
+(148,205,'XC9572XL CPLD development board v1',2,0,'http://dangerousprototypes.com/docs/CPLD:_Complex_programmable_logic_devices',46,1,1,''),
+(149,205,'315Mhz remote relay switch kits - 4 channels',1,0,'http://www.seeedstudio.com/depot/315mhz-remote-relay-switch-kits-2-channels-p-150.html?cPath=139',46,1,1,''),
+(150,205,'USB Universal LCD backpack v1 IP Power',1,0,'http://dangerousprototypes.com/docs/USB_Universal_LCD_backpack',46,1,1,''),
+(151,205,'Lipo Rider',1,0,'http://www.seeedstudio.com/depot/lipo-rider-p-710.html?cPath=155',46,1,1,''),
+(152,205,'SD card shield for Arduino V2.1',1,0,'http://www.seeedstudio.com/depot/sd-card-shield-p-492.html?cPath=132_134',46,1,1,''),
+(153,205,'LED 8',1,0,'http://www.soc-robotics.com/pdfs/LED8%20Technical%20Reference%20Manual.pdf',46,1,1,''),
+(154,205,'Seeed - jyetech Capacitor testor',1,0,'http://www.jyetech.com/Products/CapMeter/e060.php',46,1,1,''),
+(155,205,'2.54mm x 21mm male headers (very tall!)',100,0,'',46,1,1,''),
+(156,205,'USnooBie',1,0,'http://www.frank-zhao.com/usnoobie/index.php',46,1,1,''),
+(157,205,'IFC',1,0,'http://geoffg.net/fancontroller.html',46,1,1,''),
+(158,205,'ECG',1,0,'http://www.siliconchip.com.au/cms/A_103787/article.html',46,1,1,''),
+(159,205,'Timer',1,0,'http://www.siliconchip.com.au/cms/A_105013/article.html',46,1,1,''),
+(160,205,'IR remote vol ctl',1,0,'http://www.siliconchip.com.au/cms/A_30559/article.html',46,1,1,''),
+(161,205,'SARduino328',1,0,'http://spaceagerobotics.com/blog/projects/sarduino/',46,1,1,''),
+(162,205,'SARduino644',1,0,'http://spaceagerobotics.com/blog/projects/sarduino/',46,1,1,''),
+(163,205,'IRToy PTH',1,0,'http://dangerousprototypes.com/docs/Infrared_Toy_through-hole_version',46,1,1,''),
+(164,205,'FFC breakout 30 pin',1,0,'http://www.seeedstudio.com/depot/ffc-breakout-board-p-267.html?cPath=190',46,1,1,''),
+(165,205,'FPC LCD breakout 0.5mm 60 pin',1,0,'http://www.seeedstudio.com/depot/lcd-ext-breakout-of-05mm-fpc-p-200.html?cPath=175_177',46,1,1,''),
+(166,205,'xQFP breakout 0.8mm',1,0,'http://dangerousprototypes.com/docs/Dangerous_Proto_boards',46,1,1,''),
+(167,205,'xQFP breakout 0.65mm',1,0,'http://dangerousprototypes.com/docs/Dangerous_Proto_boards',46,1,1,''),
+(168,205,'xQFP breakout 0.5mm',1,0,'http://dangerousprototypes.com/docs/Dangerous_Proto_boards',46,1,1,''),
+(169,205,'Atmel dragon & dragon rider',1,0,'',46,1,1,''),
+(170,205,'molex floppy power cable',1,0,'',46,1,1,''),
+(171,205,'motherboard with onboard video, with RAM & CPU, don't need case or power supply, 2 SATA ports, 1 PATA IDE port for CD/DVD',1,0,'',46,1,1,''),
+(172,205,'SD cards or USB sticks - for Linux boot & psw mgt!',1,0,'',46,1,1,''),
+(173,205,'ide or sata hard disks, esp laptop 1.8'' laptop',1,0,'',46,1,1,'');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pending_orders`
+--
+
+CREATE TABLE IF NOT EXISTS `pending_orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `part_id` int(11) NOT NULL DEFAULT '0',
+  `quantity` int(11) NOT NULL DEFAULT '0',
+  `t` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`),
+  KEY `part_id` (`part_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `pending_orders`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pictures`
+--
+
+CREATE TABLE IF NOT EXISTS `pictures` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `part_id` int(11) NOT NULL DEFAULT '0',
+  `pict_fname` varchar(255) NOT NULL DEFAULT '',
+  `pict_width` int(11) NOT NULL DEFAULT '0',
+  `pict_height` int(11) NOT NULL DEFAULT '0',
+  `pict_type` enum('P','T') NOT NULL DEFAULT 'P',
+  `tn_obsolete` smallint(6) NOT NULL DEFAULT '0',
+  `tn_t` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `tn_pictid` int(11) NOT NULL DEFAULT '0',
+  `pict_masterpict` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `pict_type` (`pict_type`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `pictures`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `preise`
+--
+
+CREATE TABLE IF NOT EXISTS `preise` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `part_id` int(11) NOT NULL DEFAULT '0',
+  `ma` smallint(6) NOT NULL DEFAULT '0',
+  `preis` decimal(6,2) NOT NULL DEFAULT '0.00',
+  `t` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`),
+  KEY `part_id` (`part_id`),
+  KEY `ma` (`ma`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `preise`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `storeloc`
+--
+
+CREATE TABLE IF NOT EXISTS `storeloc` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `storeloc`
+--
+
+INSERT INTO `storeloc` (`id`, `name`) VALUES
+(1, 'To be determined!');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `suppliers`
+--
+
+CREATE TABLE IF NOT EXISTS `suppliers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` tinytext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `suppliers`
+--
+
+INSERT INTO `suppliers` (`id`, `name`) VALUES
+(1, 'To be determined!');
+

@@ -1,0 +1,2 @@
+#Redirect 302 / http://parts.xinchejian.com/frontend/
+#Redirect 302 /setup/ http://parts.xinchejian.com/frontend/
