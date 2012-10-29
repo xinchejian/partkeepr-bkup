@@ -1,0 +1,105 @@
+{| class="wikitable" valign="top"
+! Quantity
+! Part
+! Remarks
+! Projects
+! Storage Location
+! Available
+! Distributor
+! Distributor Order Number
+! Price per Item
+! Sum
+! Amount to Order
+! Sum (Order)
+|-
+| 1
+| SwarmRobots IR shield PCB 2012-10 v2
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 100
+| undefined
+| 
+| RMB
+| 0.00RMB
+| 0
+| 0.00RMB
+|-
+| 4
+| 1838B or TSOP1838B or VS1838B
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a230r.1.10.19&amp;id=14691731276
+| 0.45RMB
+| 1.80RMB
+| 4
+| 1.80RMB
+|-
+| 2
+| 8x1 2.54mm Male Single row  header (SIL)
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 0.10RMB
+| 0.20RMB
+| 2
+| 0.20RMB
+|-
+| 2
+| 47uF electrolytic
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Capacitor Box2
+| 1
+| XCJ Member: Spencer
+| 
+| 1.00RMB
+| 2.00RMB
+| 1
+| 1.00RMB
+|-
+| 4
+| 22k ohm 1/4 watt resistor
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| ResistorWallRack1
+| 0
+| undefined
+| 
+| RMB
+| 0.00RMB
+| 4
+| 0.00RMB
+|-
+| 2
+| 47 ohm 1/4 watt resistor
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| ResistorWallRack1
+| 0
+| undefined
+| 
+| RMB
+| 0.00RMB
+| 2
+| 0.00RMB
+|-
+| 1
+| IR333-A transmitter
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 1.00RMB
+| 1.00RMB
+| 1
+| 1.00RMB
+|}
