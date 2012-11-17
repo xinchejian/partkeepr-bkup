@@ -1,0 +1,365 @@
+{| class="wikitable" valign="top"
+! Quantity
+! Part
+! Remarks
+! Projects
+! Storage Location
+! Available
+! Distributor
+! Distributor Order Number
+! Price per Item
+! Sum
+! Amount to Order
+! Sum (Order)
+|-
+| 1
+| AtTiny2313-PU
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Mouser (international)
+| 
+| 18.00RMB
+| 18.00RMB
+| 1
+| 18.00RMB
+|-
+| 1
+| L293D h-Bridge Chip
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a230r.1.10.63&amp;id=14698384627
+| 2.80RMB
+| 2.80RMB
+| 1
+| 2.80RMB
+|-
+| 1
+| LED 3mm Red
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL (Front skid can be replaced with bent wire) 1xPWR_LED1   LED, 1xUsed as Front wheel/skid
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 0.05RMB
+| 0.05RMB
+| 1
+| 0.05RMB
+|-
+| 1
+| 3x2 2.54mm Male Dual row header (DIL)
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL ICSP1      CONN_3X2
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 0.10RMB
+| 0.10RMB
+| 1
+| 0.10RMB
+|-
+| 2
+| 8x1 2.54mm Female Single row socket (SIL)
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL can wire directly
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Optional - use for optional parts in a project! Set price to 0.001 if you want teh supplier to appear in project report!
+| 
+| 0.01RMB
+| 0.02RMB
+| 2
+| 0.02RMB
+|-
+| 1
+| SPST PCB  mount
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL - can just plug battery in/out! PWR_SWITCH1 SWITCH_INV
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?id=10841749419
+| 0.15RMB
+| 0.15RMB
+| 1
+| 0.15RMB
+|-
+| 3
+| 200R ç”µé˜» 1/4W
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL R1, 2, 3
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 1000
+| Taobao
+| 
+| 0.01RMB
+| 0.03RMB
+| 0
+| 0.00RMB
+|-
+| 1
+| LED 3mm Blue
+| Swarm Robot moving PCB (version 2012-08-09): *Optional Rx
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 0.05RMB
+| 0.05RMB
+| 1
+| 0.05RMB
+|-
+| 1
+| LED 3mm Yellow
+| Swarm Robot moving PCB (version 2012-08-09): *Optional Tx
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 0.05RMB
+| 0.05RMB
+| 1
+| 0.05RMB
+|-
+| 2
+| Wheel
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Recycled - Scavenged - item
+| 
+| 0.01RMB
+| 0.02RMB
+| 2
+| 0.02RMB
+|-
+| 1
+| SwarmRobots PCB 2012-08-09
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL - can use breadboard or deadbug wiring!
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://store.taobao.com/shop/view_shop.htm?spm=a1z09.2.9.32&amp;user_number_id=117902299
+| 10.00RMB
+| 10.00RMB
+| 1
+| 10.00RMB
+|-
+| 2
+| Motor J928
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 10
+| Taobao
+| 3.5Y http://item.taobao.com/item.htm?spm=a230r.1.10.163&amp;id=13758597818
+| 2.20RMB
+| 4.40RMB
+| 0
+| 0.00RMB
+|-
+| 2
+| screw - tiny
+| Swarm Robot moving PCB (version 2012-08-09): to attach wheels to motors
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Recycled - Scavenged - item
+| 
+| 0.01RMB
+| 0.02RMB
+| 2
+| 0.02RMB
+|-
+| 1
+| Hot melt glue
+| Swarm Robot moving PCB (version 2012-08-09): 1/20th of a stick?  to attach motors and???
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a230r.1.10.38&amp;id=9604073433
+| 0.03RMB
+| 0.03RMB
+| 1
+| 0.03RMB
+|-
+| 1
+| Hookup wire
+| Swarm Robot moving PCB (version 2012-08-09): *OPTIONAL about 100mm for motors and maybe for battery, or use two strands of Rainbow cable
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Recycled - Scavenged - item
+| 
+| 0.01RMB
+| 0.01RMB
+| 1
+| 0.01RMB
+|-
+| 3
+| 14pin DIP IC socket
+| Swarm Robot moving PCB (version 2012-08-09): *Optional, can also use rubber bands, glue etc
+| Swarm Robot moving PCB (version 2012-08-09), Swarm Robot moving PCB (version 2012-08-09)
+| Big Shelves-r2c4
+| 0
+| Taobao
+| 
+| 0.12RMB
+| 0.36RMB
+| 3
+| 0.36RMB
+|-
+| 1
+| Lithium 180mA 3.7V
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a1z10.3.17.50&amp;id=10651345659&amp;
+| 8.00RMB
+| 8.00RMB
+| 1
+| 8.00RMB
+|-
+| 1
+| USB lithium battery charger
+| Swarm Robot moving PCB (version 2012-08-09): *Optional - Do not need 1 for every SwarmBot
+| Swarm Robot moving PCB (version 2012-08-09)
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a1z10.3.17.22&amp;id=10651070573&amp;
+| 2.00RMB
+| 2.00RMB
+| 1
+| 2.00RMB
+|-
+| 1
+| ISP Programmer
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Not yet Allocated - To Be Determined TBD
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a230r.1.10.9&amp;id=5906065954
+| 18.40RMB
+| 18.40RMB
+| 1
+| 18.40RMB
+|-
+| 1
+| 20pin DIP IC socket
+| 
+| Swarm Robot moving PCB (version 2012-08-09)
+| Big Shelves-r2c4
+| 0
+| Taobao
+| 
+| 0.16RMB
+| 0.16RMB
+| 1
+| 0.16RMB
+|-
+| 1
+| SwarmRobots IR shield PCB 2012-10 v2
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 100
+| undefined
+| 
+| RMB
+| 0.00RMB
+| 0
+| 0.00RMB
+|-
+| 4
+| 1838B or TSOP1838B or VS1838B
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| http://item.taobao.com/item.htm?spm=a230r.1.10.19&amp;id=14691731276
+| 0.45RMB
+| 1.80RMB
+| 4
+| 1.80RMB
+|-
+| 2
+| 8x1 2.54mm Male Single row  header (SIL)
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 0.10RMB
+| 0.20RMB
+| 2
+| 0.20RMB
+|-
+| 2
+| 47uF electrolytic
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Capacitor Box2
+| 1
+| XCJ Member: Spencer
+| 
+| 1.00RMB
+| 2.00RMB
+| 1
+| 1.00RMB
+|-
+| 4
+| 22k ohm 1/4 watt resistor
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| ResistorWallRack1
+| 0
+| undefined
+| 
+| RMB
+| 0.00RMB
+| 4
+| 0.00RMB
+|-
+| 2
+| 47 ohm 1/4 watt resistor
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| ResistorWallRack1
+| 0
+| undefined
+| 
+| RMB
+| 0.00RMB
+| 2
+| 0.00RMB
+|-
+| 1
+| IR333-A transmitter
+| 
+| Swarm Robot IR Receive only Shield v2 - matches AtTiny2313 moving PCB version 2012-08-09
+| Project Shelves-r3c6-SwarmRobots
+| 0
+| Taobao
+| 
+| 1.00RMB
+| 1.00RMB
+| 1
+| 1.00RMB
+|}

@@ -1,0 +1,511 @@
+{| class="wikitable" valign="top"
+! 
+! Name
+! Description
+! Storage Location
+! Status
+! Stock
+! Min. Stock
+! Avg. Price
+! Footprint
+|-
+| 
+| Diode: 1N4148
+| 
+| Big Shelves-r2c1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| Zener diode: 2.7V
+| 
+| Big Shelves-r2c1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| Zener diode: 3V
+| 
+| Big Shelves-r2c1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| Zener diode: 5V
+| 
+| Big Shelves-r2c1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 2N7000 FET
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| Atmega328-PU
+| common Arduino uP
+| Locker3-r3c1
+| 
+| 0
+| 0
+| 0
+| CerDIP-28
+|-
+| 
+| AtTiny2313-PU
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| CerDIP-20
+|-
+| 
+| L293D h-Bridge Chip
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| BCD 7Seg 74LS247 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| 3-8 dec 74HC138 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| 4-16 Dec 74HC154 DIPThin
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| AND2 x4 74HC08 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| bin counter 74HC193 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| DFF 74HC174 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| INV x6 74HC04 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| MUX4 74HC153 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| NAND2 x4 74HC00 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| NOR2 x4 74HC02 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| OR2 x4 74HC32 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| ST x6 74HC14 DIP
+| 
+| Big Shelves-r2c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| 5V Regulator 7805 TO220
+| 
+| Lockers Entrance-r3c1 Component boxes
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| <img src="resources/diagona-icons/icons/10/190.png" style="margin-top: 2px;" alt="Has attachments" title="Has attachments"/>
+| 5V Regulator 78L05
+| low power
+| Lockers Entrance-r3c1 Component boxes
+| 
+| 0
+| 0
+| 0
+| TO92-3
+|-
+| 
+| LED 3mm Blue
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| LED 3mm Green
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| LED 3mm Red
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| LED 3mm Yellow
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| 8bar LED 10çº¿ LED å…‰æŸ±æ˜¾ç¤º DIP
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| 7seg LED Common Anode 0.5è‹±å¯¸ 1ä½æ•° å…±é˜³çº¢è‰²LEDæ•°ç ç®¡ 0.5å¯¸
+| 
+| Big Shelves-r2c1
+| 
+| 25
+| 0
+| 0
+| To be determined
+|-
+| 
+| 1838B or TSOP1838B or VS1838B
+| IR LED receiver
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| IR333-A transmitter
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| 1.5K
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 100
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 100k ç”µé˜» 1/4W
+| 
+| Lockers Entrance-r4c1
+| 
+| 1000
+| 0
+| 0
+| To be determined
+|-
+| 
+| 10k ç”µé˜» 1/4W
+| 
+| Lockers Entrance-r4c1
+| 
+| 1000
+| 0
+| 0
+| To be determined
+|-
+| 
+| 120K
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 150
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 1K
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 1k ç”µé˜» 1/4W
+| 
+| Lockers Entrance-r4c1
+| 
+| 1000
+| 0
+| 0
+| To be determined
+|-
+| 
+| 2.2K
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 2.2M
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 200R ç”µé˜» 1/4W
+| 
+| Project Shelves-r3c6-SwarmRobots
+| 
+| 1000
+| 0
+| 0
+| To be determined
+|-
+| 
+| 22k ohm 1/4 watt resistor
+| 
+| ResistorWallRack1
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| 300
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 330
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 35K
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 47 ohm 1/4 watt resistor
+| 
+| ResistorWallRack1
+| 
+| 0
+| 0
+| 0
+| 
+|-
+| 
+| 560
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 6.8K
+| 
+| ResistorWallRack1
+| 
+| 1
+| 0
+| 0
+| To be determined
+|-
+| 
+| 100k pot ç”µä½å™¨ ç²¾å¯†å¤šåœˆå¯è°ƒ
+| 
+| Lockers Entrance-r4c1
+| 
+| 50
+| 0
+| 0
+| To be determined
+|-
+| 
+| 100pF
+| 
+| Capacitor Box2
+| 
+| 1
+| 0
+| 0
+| To be determined
+|}
